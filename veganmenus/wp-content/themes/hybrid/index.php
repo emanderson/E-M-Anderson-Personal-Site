@@ -1,1 +1,0 @@
-<?php /* Simplicity is bliss. */ ?>
