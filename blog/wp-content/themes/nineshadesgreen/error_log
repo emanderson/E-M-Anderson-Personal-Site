@@ -1,8 +1,0 @@
-[02-Feb-2006 02:25:30] PHP Parse error:  parse error, unexpected '<' in /home/stevish/public_html/testblog/wp-content/themes/stevish-express/styleswitcher.php on line 11
-[02-Feb-2006 02:27:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stevish/public_html/testblog/wp-content/themes/stevish-express/styleswitcher.php:6) in /home/stevish/public_html/testblog/wp-content/themes/stevish-express/styleswitcher.php on line 17
-[02-Feb-2006 02:29:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stevish/public_html/testblog/wp-content/themes/stevish-express/styleswitcher.php:10) in /home/stevish/public_html/testblog/wp-content/themes/stevish-express/styleswitcher.php on line 17
-[02-Feb-2006 13:25:15] PHP Fatal error:  Call to undefined function:  get_header() in /home/stevish/public_html/testblog/wp-content/themes/stevish-express/index.php on line 1
-[02-Feb-2006 13:28:32] PHP Fatal error:  Call to undefined function:  get_header() in /home/stevish/public_html/testblog/wp-content/themes/stevish-express/index.php on line 1
-[05-Feb-2006 01:24:56] PHP Fatal error:  Call to undefined function:  get_header() in /home/stevish/public_html/testblog/wp-content/themes/nineshadesgreen/index.php on line 1
-[05-Feb-2006 02:02:39] PHP Fatal error:  Call to undefined function:  get_header() in /home/stevish/public_html/testblog/wp-content/themes/nineshadesgreen/index.php on line 1
-[05-Feb-2006 02:58:02] PHP Fatal error:  Call to undefined function:  get_header() in /home/stevish/public_html/testblog/wp-content/themes/nineshadesgreen/index.php on line 1
