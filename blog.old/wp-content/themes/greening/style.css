@@ -1,0 +1,506 @@
+/*  
+Theme Name: Greening
+Theme URI: http://blog.mihalev.info/wordpress-themes/#Greening_1
+Description: The second WordPress theme created by <a href="http://blog.mihalev.info/">Martin Mihalev</a> and based mostly on his first theme Rusty.
+Version: 1.02
+Author: Martin Mihalev
+Author URI: http://blog.mihalev.info/
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #C5CDB6;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(images/body_background.jpg);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+input, textarea, select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+form {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #ADC869;
+}
+
+a:visited {
+	color: #ADC869;
+}
+
+a:hover {
+	color:#DCFF9E;
+}
+
+
+#page {
+	position: absolute;
+	width: 835px;
+	margin-left: 50%;
+	left: -435px;
+	border-color: #474D3D;
+	border-style: solid;
+	border-width: 0px 0px;
+	padding: 0px 35px 0px 0px;
+	background-image: url(images/right_border_background.jpg);
+	background-position: top right;
+	background-repeat: repeat-y;
+}
+
+#page_2 {
+	padding: 0px 0px 0px 35px;
+	background-image: url(images/left_border_background.jpg);
+	background-position: top left;
+	background-repeat: repeat-y;
+}
+
+	#header {
+		z-index:1;
+		position: relative;
+		width: 100%;
+	}
+	
+		#left_side_2 {
+			z-index:2;
+			position:absolute;
+			top:0px;
+			left:0px;
+			bottom: 0px;
+			width: 35px;
+			height: 400px;
+			background-image: url(images/left_side_background_3.jpg);
+			background-position: top left;
+			background-repeat: no-repeat;
+		}
+		
+		#right_side_2 {
+			z-index:2;
+			position:absolute;
+			top:0px;
+			right:0px;
+			width: 35px;
+			height: 400px;
+			background-image: url(images/right_side_background_3.jpg);
+			background-position: top left;
+			background-repeat: no-repeat;
+		}
+		
+		#page_2 > #right_side_2 {
+			right:0px;
+		}
+		
+		#header_1 {
+			height: 223px;
+			overflow:hidden;
+			border-style: solid;
+			border-width: 0px 5px;
+			border-color: #474D3D;
+			color: #fff;
+			background-color: #DCFF9E;
+		}
+		
+			#blog_title {
+				padding-top: 78px;
+				font-size: 3em;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			#blog_title a, #blog_title a:visited, #blog_title a:hover {
+				color: #fff;
+			}
+		
+			#blog_moto {
+				padding: 10px 35px 0px 35px;
+				font-size: 1.2em;
+				text-align: center;
+			}
+		
+		#header_2 {
+			height: 31px;
+			background-color: #474D3D;
+			overflow:hidden;
+		}
+		
+			#header_2 form {
+				float:left;
+				padding: 4px 0px 0px 5px;
+			}
+			
+			#header_2 > form {
+				padding: 5px 0px 0px 5px;
+			}
+			
+			#header_2 input {
+				padding: 3px 4px;
+				width: 204px;
+				height: auto;
+				font-size: .9em;
+				border: 1px solid #DCFF9E;
+				background-color: #DCFF9E;
+			}
+			
+			#rss_holder {
+				float: right;
+				padding:8px 5px 0px 0px;
+				font-weight: bold;
+			}
+			
+			#h_menu_holder {
+				float: left;
+				padding:8px 0px 0px 5px;
+				font-weight: bold;
+			}
+	
+	#content, #content_2 {
+		background-color: #474D3D;
+		padding: 0px 5px;
+	}
+	
+	#content_2 .post_content {
+		background-image: none;
+	}	
+	
+	#content_2 .post_content ul {
+		list-style-image: url(images/list_marker_4.jpg);
+	}
+
+		#sidebar {
+			width: 25%;
+			float: left;
+			font-size: 0.83em;
+			overflow: hidden;
+			background-color: #4F5644;
+		}
+		
+			#sidebar h2 {
+				width:inherit;
+				border: 1px solid #474D3D;
+				border-width:0px 0 2px 0;
+				font-size: 1.2em;
+				padding: 8px 0 8px 8px;
+				margin: 0;
+				background-image: url(images/comment_background.jpg);
+				background-position: top left;
+				background-repeat: no-repeat;
+			}
+		
+			#sidebar ul {
+				list-style-image: none;
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#sidebar ul ul {
+				margin-bottom: 20px;
+			}
+			
+			#sidebar ul ul ul {
+				margin-bottom: 0px;
+			}
+			
+			#sidebar ul ul li {
+				color: #788169;
+				padding: 2px 10px 2px 20px;
+				background-image: none;
+			}
+			
+			#sidebar ul ul li li {
+				padding: 2px 12px;
+				background-image:url(images/menu_item_children.jpg);
+				background-position:top left;
+				background-repeat:no-repeat;
+			}
+			
+			/* Calendar:START */
+			#wp-calendar {
+				width: 80%;
+				margin-left: 10%;
+			}
+			
+			#wp-calendar caption {
+				width: 80%;
+				margin-left: 10%;
+				font-weight: bold;
+			}
+			
+			#wp-calendar th {
+				font-weight: bold;
+				background-color: #474D3D;
+				color: #666F5A;
+			}
+			
+			#wp-calendar td {
+				border: 1px solid #474D3D;
+				text-align: center;
+				color: #393F2F;
+			}
+			
+			#wp-calendar tfoot td {
+				text-align: center;
+			}
+			
+			#wp-calendar {
+				margin-bottom: 20px;
+			}
+			/* Calendar:END */
+	
+		#text {
+			float: right;
+			width: 75%;
+			overflow: hidden;
+		}
+	
+			div.pagetitle {
+				font-size: 1.5em;
+				font-weight: bold;
+				text-align: left;
+				width: 100%;
+				padding: 10px 18px;
+				background-image: url(images/comment_background.jpg);
+				background-position: top left;
+				background-repeat: no-repeat;
+				border-left: 3px solid #A4723F;
+				margin-bottom: 2px;
+				background-color: #4F5644;
+			}
+			
+			.navigation {
+				width: 90%;
+				margin: 5%;
+				font-weight: bold;
+			}
+			
+			.navigation .alignleft {
+				float:left;
+			}
+			
+			.navigation .alignright {
+				float:right;
+			}
+			
+	#footer {
+		text-align: center;
+		padding: 10px 0px;
+		line-height:2em;
+		font-size: .83em;
+		background-color: #474D3D;
+	}
+	
+	.post {
+		background-color: #4F5644;
+		width: 100%;
+		margin-bottom: 2px;
+		background-image: url(images/comment_background.jpg);
+		background-position: top left;
+		background-repeat: no-repeat;
+		border-left: 3px solid #A4723F;
+	}
+	
+		.post_header {
+			margin-left: 18px;
+			padding: 10px 0 12px 0px;
+			background-image: url(images/block_horizontal_line.jpg);
+			background-position: bottom left;
+			background-repeat: no-repeat;
+		}
+		
+			.post_title {
+				font-weight: bold;
+				font-size: 1.4em;
+			}
+			
+			.post_date {
+				margin-top: 5px;
+				font-size: .83em;
+			}
+	
+		.post_content {
+			margin-left: 18px;
+			padding: 18px 18px 22px 0px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: .9em;
+			line-height: 1.4em;
+			background-image: url(images/block_horizontal_line.jpg);
+			background-position: bottom left;
+			background-repeat: no-repeat;
+		}
+			
+			.post_content ul, .comment_content ul {
+				list-style-image: url(images/list_marker_3.jpg);
+				list-style-type: none;
+				list-style-position: outside;
+			}
+
+			.post_content ul ul, .comment_content ul ul {
+				padding-left:0px;
+				margin-left:30px;
+			}
+
+			.post_content blockquote, .comment_content blockquote {
+				border:0px solid #474D3D;
+				border-left-width: 3px;
+				background-image: url(images/block_horizontal_line.jpg);
+				background-position: top left;
+				background-repeat: no-repeat;
+				margin: 5px 0 5px 18px;
+				padding: 1px 10px 0px 18px;
+			}
+
+			.post_content blockquote blockquote, .comment_content blockquote blockquote {
+				margin-left: 0px;
+			}
+
+			.post_content>blockquote, .comment_content>blockquote, .post_content>blockquote blockquote, .comment_content>blockquote blockquote {
+				padding-bottom: 1px;
+			}
+
+			.post_content img, .comment_content img {
+				margin: 3px;
+			}
+			
+			.post_content h2 {
+				font-size:1.4em;
+			}
+			
+		.post_footer {
+			padding: 7px 18px 7px 19px;
+			font-size: .83em;
+		}
+			
+			.post_category {
+				float: left;
+				padding-bottom: 3px;
+			}
+			
+			.post_comments {
+				float: right;
+				padding-bottom: 3px;
+			}
+	
+	.comment {
+		background-color: #4F5644;
+		width: 100%;
+		border-left: 3px solid #A4723F;
+		margin-bottom: 2px;
+		background-image: url(images/comment_background.jpg);
+		background-position: top left;
+		background-repeat: no-repeat;
+	}
+	
+		.comment_header {
+			margin-left: 36px;
+			padding: 10px 0 12px 0px;
+			background-image: url(images/block_horizontal_line.jpg);
+			background-position: bottom left;
+			background-repeat: no-repeat;
+		}
+			
+			.comment_title {
+				font-weight: bold;
+				font-size: 1.2em;
+			}
+			
+			.comment_date {
+				margin-top: 5px;
+				font-size: .83em;
+			}
+				
+		.comment_content {
+			padding: 5px 18px 5px 36px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: .9em;
+			line-height: 1.4em;
+		}
+
+	.comment_input {
+		clear:both;
+	}
+
+		.comment_submit {
+			float: left;
+			margin-top: 2px;
+			color: #ADC869;
+			font-size: .92em;
+			font-weight: bold;
+			width: 70px;
+			padding: 5px 0px;
+			border: 0px solid #879376;
+			background-color: #464D3D;
+		}
+		
+		.comment_submit:hover {
+			color:#DCFF9E;
+		}
+	
+	.visual_clear {
+		clear: both;
+		height: 50px;
+	}
+	
+	.visual_clear_2 {
+		clear: both;
+	}
+	
+	span.admin_edit_link {
+		font-size: .83em;
+		float: right;
+		margin: 0px 18px 0px 0px;
+	}
+	
+	a img {
+		border: none;
+	}
+	
+	.comment_number {
+		float:left;
+		font-size: 0.83em;
+		padding: 5px;
+		text-align: center;
+		border-style: solid;
+		border-color: #A4723F;
+		border-width: 0px 1px 3px 0px;
+	}
+	
+	.nocomments {
+		text-align: center;
+	}
+	
+	#name_label, #mail_label, #website_label, #question_label {
+		float: left;
+		width: 70px;
+		padding: 5px 0px;
+		font-size: 1em;
+		color: #393F2F;
+	}
+
+	#author, #email, #url, #comment {
+		width: 300px;
+		padding: 5px;
+		color: #C5CDB6;
+		background-color: #474D3D;
+		font-size: 1em;
+		background-image:url(images/comment_input_background.jpg);
+		background-repeat:repeat;
+		background-position:top left;
+		border-width: 0px;
+	}	
+	
+	.visual_clear_3 {
+		clear: both;
+		margin-top: 1px;
+		height:10px;
+		width: 380px;
+		background-image: url(images/block_horizontal_line.jpg);
+		background-position: top left;
+		background-repeat: no-repeat;
+	}

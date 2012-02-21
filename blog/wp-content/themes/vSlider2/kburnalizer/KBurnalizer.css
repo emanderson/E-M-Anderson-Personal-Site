@@ -1,0 +1,76 @@
+/*
+	Name: KBurnalizer
+	Author: Rui Pereira
+	URI: http://iRui.ac/cool-stuff/kburnalizer
+
+	This work is licensed under a Creative Commons License
+	http://creativecommons.org/licenses/by/2.5/
+*/
+
+.kb-viewport {
+	position: relative;
+	display: block;
+	background-color: #000;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.kb-image {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+}
+
+.kb-text-area {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	background-color: #000;	
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	height: 20px;
+}
+
+.kb-text {	
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;	
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 1.1em;
+}
+
+.kb-irui-text {	
+	position: absolute;
+	right: 0px;
+	bottom: 0px;	
+	text-align: right;
+	background-color: #000;	
+	
+}
+
+.kb-irui-text a {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 0.7em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.kb-load-bar {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 1%;
+	background-color: #00F;	
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	height: 20px;
+}

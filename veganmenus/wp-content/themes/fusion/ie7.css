@@ -1,0 +1,11 @@
+
+
+/* Internet Explorer 7 bug fixes */
+
+.comment{
+   display: inline; /* fixes the new cool IE 7 double-margin bug */
+}
+
+div.act{
+   top: 9px;
+}

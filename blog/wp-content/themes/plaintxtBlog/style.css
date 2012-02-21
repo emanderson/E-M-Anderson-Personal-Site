@@ -1,0 +1,428 @@
+/*
+Theme Name: plaintxtBlog
+Theme URI: http://www.plaintxt.org/themes/plaintxtblog/
+Description: Your blog, but simplified. A clutter-free, 3-column layout. For WordPress 2.0+ (and Widgets friendly).
+Version: 2.2
+Author: Scott Allan Wallick
+Author URI: http://scottwallick.com/
+*/
+/*
+"plaintxtBlog" (C) 2006 Scott Allan Wallick - http://scottwallick.com/ - and distributed under the terms of the GNU General Public License v2
+*/
+body {
+	background: #fff;
+	border: 1px solid #111;
+	color: #111;
+	line-height: 150%;
+	margin: 20px;
+	padding: 20px;
+}
+a {
+	outline: none;
+}
+/* HEADER STUFF */
+div#header {
+	margin: 0 0 4em 0;
+}
+h1#title {
+	font-size: 1.25em;
+	margin: 0 0 0.25em 0;
+}
+p#description {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+}
+/* CONTENT STUFF */
+div.narrowcolumn {
+	float: left;
+	margin: 0 2%;
+	width: 59%;
+}
+div.widecolumn {
+	margin: 0 auto;
+	width: 50em;
+}
+div.post-header, div.navigation {
+	background: #e5e5e5;
+	color: #444;
+}
+div.post-header {
+	display: block;
+	height: 1.45em;
+	margin: 0 0 -0.25em 0;
+	padding: 0 0.4em 1px 0.4em;
+	text-transform: uppercase;
+}
+h2.post-title, h3.post-date {
+	margin: 0;
+	font-size: 0.9em;
+}
+h2.post-title {
+	float: left;
+}
+h3.post-date  {
+	float: right;
+	font-weight: normal;
+}
+div.post-entry code, div.post-entry pre {
+	font: 1em/normal "courier new", courier, monospace;
+}
+div.post abbr, div.post acronym {
+	border-bottom: 1px dotted #c30;
+	cursor: help;
+}
+div.post-entry blockquote {
+	border-left: 0.4em solid #eee;
+}
+div.post-entry blockquote p {
+	margin: 0.25em 0;
+	padding: 0.5em 1em;
+}
+div.post-entry blockquote ul {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+div.post-entry h2, div.post-entry h3, div.post-entry h4, div.post-entry h5, div.post-entry h6 {
+	font-size: 1em;
+	margin: 1.125em 0 -0.75em 0;
+}
+div.post-metadata p.post-footer {
+	font-size: 1em;
+	font-style: italic;
+	margin: -0.5em 0 3em 0;
+	text-align: right;
+}
+div.post-entry blockquote, div#single-post-metadata, div#comments ol li {
+	background: #f6f6f6;
+	color: #333;
+}
+div#single-post-metadata {
+	margin: 0 10% 2em 10%;
+	padding: 0.75em 1em;
+	text-align: center;
+}
+h3.post-footer-header {
+	font-size: 0.9em;
+	margin: 0 0 0.3em 0;
+	text-transform: uppercase;
+}
+div#single-post-metadata p.post-footer {
+	font-size: 0.9em;
+	margin: 0;
+}
+form#commentform {
+	margin: 1em 0;
+	padding: 0;
+}
+h4#comment-count, h4#respond {
+	font-size: 1em;
+	margin: 0;
+}
+div#comments ol li {
+	padding: 0.5em 1em;
+	margin-bottom: 1.5em;
+}
+div#comments ol li.alt {
+	background: #eee;
+	color: #111;
+}
+div#comments ol li p {
+	margin: 0.5em 0;
+}
+p.comment-author, p.comment-metadata {
+	margin: 0;
+}
+p.comment-metadata {
+	font-style: italic;
+}
+/* STUFF FOR PAGE TEMPLATES AND THE SUMMARY_HOME.PHP FILE */
+h3.excerpt-title {
+	font-size: 1em;
+	margin: 1em 0 0 0 !important;
+}
+p.excerpt-entry {
+	margin: 0;
+}
+p.excerpt-footer {
+	font-size: 1em;
+	font-style: italic;
+	margin: 0 0 1.5em 0;
+}
+h4.post-navigation {
+	font-size: 1em;
+	margin: 0 0 1.5em 0 !important;
+}
+div.content-column {
+	float: left;
+	margin: 0 3% 0 0;
+	width: 44%
+}
+div.post ul.list, div.post ul.list li, div.post ul.list li ul  {
+	margin: 0;
+	padding: 0;
+}
+div.post ul.list li {
+	font-size: 1em;
+	list-style: none;
+}
+div.post ul.list li h2 {
+	font-size: 1em;
+	margin: 1em 0 0 0;
+}
+/* SIDEBAR COL1/COL2 STUFF */
+div.sidebar {
+	float: left;
+	text-align: right;
+	width: 15%;
+}
+div#col1 {
+	margin: 0 1% 0 0;
+}
+div#col2 {
+	margin: 0 2% 0 1%;
+}
+div.sidebar ul, div.sidebar ul li ul li, div.sidebar ul li ul li ul, div.sidebar ul li ul li ul li   {
+	margin: 0;
+	padding: 0;
+}
+div.sidebar ul {
+	border-right: 5px solid #e2e2e2;
+}
+div.sidebar ul li {
+	list-style: none;
+	margin: 0 1em 0 0;
+	padding: 0;
+}
+div.sidebar ul li h2 {
+	background: #fff;
+	color: #444;
+	font-size: 1em;
+	margin: 0;
+}
+div.sidebar ul li ul {
+	border: none;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+div.sidebar ul li ul li ul {
+	margin: 0 0 0.5em 0;
+}
+div.sidebar ul li ul li ul li {
+	font-size: 0.9em;
+	font-style: italic;
+}
+/* FOOTER STUFF */
+div#footer {
+	clear: both; 
+}
+p#blog-footer  {
+	background: #fff;
+	color: #aaa;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 4em 0 0 0;
+}
+/* MULTI-PURPOSE STRUCTURAL DIVS */
+.navigation {
+	font-size: 0.9em;
+	font-weight: bold;
+	height: 1.5em;
+	margin: 2em 0;
+	padding: 0 0.4em 1px 0.4em;
+	text-align: center;
+	width: 100%;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.clearer {
+	clear: both;
+	height: 1px;
+}
+/* LINK STYLES */
+div#header a, div#header a:active, div#header a:link, div#header a:visited {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	color: #059;
+	text-decoration: none;
+}
+div#header a:hover {
+	background: #fff;
+	border-bottom: 1px solid #999;
+	color: #c30;
+}
+div.post-header a, div.post-header a:active, div.post-header a:link, div.post-header a:visited, div.navigation a, div.navigation a:active, div.navigation a:link, div.navigation a:visited {
+	background: #e5e5e5;
+	color: #059;
+	text-decoration: none;
+}
+div.post-header a:hover, div.navigation a:hover {
+	background: #e5e5e5;
+	color: #c30;
+}
+div.post-entry a, div.post-entry a:active, div.post-entry a:link, p.post-footer a, p.post-footer a:active, p.post-footer a:link {
+	background: #fff;
+	color: #059;
+}
+div.post-entry a:visited, p.post-footer a:visited {
+	background: #fff;
+	color: #4080b3;
+}
+div.post-entry a:hover, p.post-footer a:hover {
+	background: #fff;
+	color: #c30;
+	text-decoration: none;
+}
+div.post-entry blockquote a, div.post-entry blockquote a:active, div.post-entry blockquote a:link, div#single-post-metadata a, div#single-post-metadata a:active, div#single-post-metadata blockquote a:link {
+	background: #f6f6f6;
+	color: #059;
+}
+div.post-entry blockquote a:visited, div#single-post-metadata a:visited {
+	background: #f6f6f6;
+	color: #4080b3;
+}
+div.post-entry blockquote a:hover, div#single-post-metadata a:hover {
+	background: #f6f6f6;
+	color: #c30;
+	text-decoration: none;
+}
+div#comments a, div#comments a:active, div#comments a:link {
+	background: transparent;
+	color: #059;
+}
+div#comments a:visited {
+	background: transparent;
+	color: #4080b3;
+}
+div#comments a:hover {
+	background: transparent;
+	color: #c30;
+	text-decoration: none;
+}
+div.sidebar a, div.sidebar a:active, div.sidebar a:link {
+	background: #fff;
+	color: #059;
+	padding: 0.1em 0.2em;
+	text-decoration: none;
+}
+div.sidebar a:hover {
+	background: #059;
+	color: #fff;
+}
+.current-cat a, .current-cat a:active, .current-cat a:link, .current-cat a:visited, .current-cat a:hover, .current_page_item a, .current_page_item a:active, .current_page_item a:link, .current_page_item a:visited, .current_page_item a:hover {
+	background: #80abcd;
+	color: #fff;
+}
+div#footer a, div#footer a:active, div#footer a:link, div#footer a:visited {
+	color: #aaa;
+	background: #fff;
+}
+div#footer a:hover {
+	color: #c30;
+	background: #fff;
+	text-decoration: none;
+}
+/* IMAGE ELEMENTS, INCLUDING LINKS */
+div#content img.center, div#content img.alignright, div#content img.alignleft {
+	border: 1px solid #222;
+}
+div#content img.center {
+	display: block;
+	margin: 5px auto;
+}
+div#content img.alignright {
+	margin: 5px 0 5px 10px
+}
+div#content img.alignleft {
+	margin: 5px 10px 5px 0;
+}
+div#content a:hover img.center, div#content a:hover img.alignright, div#content a:hover img.alignleft {
+	border: 1px solid #c30;
+}
+li a img {
+	border: none !important;
+}
+/* FORMS FOR COMMENTS AND SEARCH / INCLUDES STYLES FOR THE WP-CONTACTFORM PLUGIN */
+li#search form#searchform {
+	margin: 0.1em 0;
+	padding: 0;
+}
+li#search br {
+	display: inline;
+}
+li#search #s {
+	border: 1px inset #666;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 2px;
+	width: 45%;
+}
+li#search #s:focus {
+	border: 1px outset #c30;
+}
+li#search input[type=submit] {
+	background: #eee;
+	border: 1px outset #aaa;
+	color: #111;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 1px;
+}
+li#search #searchsubmit:focus {
+	background: #ddd;
+	border: 1px inset #c30;
+	color: #111;
+}
+div.formcontainer {
+	font-size: 1em;
+	overflow: hidden;
+	position: static;
+	width: 99%;
+}
+div.formright, div.formleft {
+	background: #fff;
+	color: #555;
+	display: inline;
+	float: left;
+	margin: 0.3em 0;
+}
+div.formright {
+	text-align: left;
+	width: 75%;
+	padding: 0.2em 0;
+}
+div.formleft {
+	clear: both;
+	text-align: right;
+	width: 6em;
+	padding: 0.2em 0.75em 0.2em 0;
+}
+#comment, #wpcf_msg {
+	height: 10em;
+	overflow: auto;
+	width: 75%;
+}
+#author, #email, #url, #wpcf_your_name, #wpcf_email, #wpcf_website {
+	width: 33%;
+}
+#author, #email, #url, #comment, #wpcf_your_name, #wpcf_email, #wpcf_website, #wpcf_msg {
+	background: #fff;
+	border: 1px inset #aaa;
+	color: #111;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0.2em 0.3em;
+}
+#author:focus, #email:focus, #url:focus, #comment:focus, #s:focus, #wpcf_your_name:focus, #wpcf_email:focus, #wpcf_website:focus, #wpcf_msg:focus {
+	border: 1px outset #c30;
+}

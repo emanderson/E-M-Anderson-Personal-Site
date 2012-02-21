@@ -1,0 +1,439 @@
+/*  
+Theme Name: Day Dream
+Theme URI: http://fightingfriends.com/daydream/
+Description: A dreamy, single column theme. 
+Version: 0.3
+Author: Jim Whimpey
+Author URI: http://fightingfriends.com
+*/
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		BODY, WRAPPINGS, ANCHORS
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Georgia, "Book Antiqua", "Souvenir Lt BT", "Times New Roman", serif;
+	}
+
+	#wrapper {
+		width: 641px;
+		margin: 0 auto;
+		background: #fff url("./images/wrap_bg.png") repeat-y;
+		}
+		
+		a {	color: #006699;	text-decoration: none; }			
+			a:hover { color: #003366; }
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		HEADER, HEADINGS, what not
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+#header {
+	width: 528px;
+	height: 115px;
+	margin: 0 auto;
+	background: #0099FF url("./images/header.jpg");
+	text-align: left;
+	padding: 160px 0 0 0;
+	}
+	
+	h1 {
+		margin: 0 0 0 20px;
+		font-size: 2.8em;
+		font-weight: normal;
+		}
+		
+		h1 a, h1:visited { color: #fff; text-decoration: none; }
+		
+	.description {
+		margin: 0 0 0 35px;
+		color: #fff;
+		font-size: 1.2em;
+		}
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		TOP BAR
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#topbar {
+	width: 527px;
+	height: 25px;
+	background: #006699;
+	margin: 0 auto;
+	border-bottom: 2px solid #4796E9;
+	}
+	
+	#topbar ul {
+		list-style: none;
+		margin: 0 15px 0 25px;
+		padding: 0;
+		}
+		
+		#topbar ul li {
+			display: block;
+			list-style: none;			
+			float: left;
+
+			font-size: 0.9em;
+			}
+			
+			#topbar ul li a, #topbar ul li a:visited {
+				float: left;
+				display: block;
+				padding: 3px 8px 0 8px;
+				height: 22px;
+				color: #fff;
+				text-decoration: none;
+				}
+				
+				#topbar ul li a:hover { background: #4796E9; }
+				
+				#topbar ul li ul, #topbar ul li ul li {
+					margin: 0;
+					padding: 0;
+					}
+				
+					#topbar ul li ul li a, #topbar ul li ul li a:visited {
+						float: left;
+						display: block;
+						padding: 6px 8px 0 8px;
+						height: 19px;
+						color: #fff;
+						text-decoration: none;
+						}
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		CONTENT
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#content {
+	width: 527px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 20px 0 0 0;
+	}
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		POSTS
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.post {
+	padding: 28px 0 20px 0;
+	}
+		
+	.post h2 {
+		font-size: 1.9em;
+		font-weight: normal;
+		color: #006699;
+		margin: -10px 20px 0 30px;
+		}
+		
+		.post h2.single { margin: -10px 20px 12px 30px; }
+			
+			.post h2 a:hover { color: #0099CC; }
+			
+	.post .data {
+		font-size: 1em;
+		font-weight: normal;
+		color: #006699;
+		margin: 0 20px 15px 50px;
+		}
+		
+		.post h3 {
+			font-size: 1.3em;
+			font-weight: normal;
+			color: #003399;
+			margin: 25px 20px -10px 0;
+			}
+			
+			#content>.post h3 { margin-bottom: 8px; } /* FF Specific */
+
+	.entry {
+		width: 426px;
+		margin: 0 auto;
+		font-size: 0.8em;
+		}
+		
+		.postmetadata {
+			width: 406px;
+			margin: 25px auto 15px auto;
+			border-top: 1px solid #ABCAD9;
+			border-bottom: 1px solid #ABCAD9;
+			background: #E9EEF0;
+			text-align: center;
+			font-size: 0.9em;
+			padding: 8px 10px;
+			}
+			
+			.postmetadata#single { margin: 0 auto 30px auto; }
+			
+			.postmetadata small { font-size: 0.8em; }			
+			
+				
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		POST PARAPHERNALIA
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+		blockquote {
+			margin: 10px 0 10px 30px;
+			padding: 0 0 0 5px;
+			border-left: 3px solid #4C8EDA;
+			color: #666;
+			}
+		
+		.post ul {
+			margin: 10px 0 ;
+			padding: 0 0 0 37px;
+			}
+		
+		.post a:hover { color: #0099CC; }
+		
+		
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		NAVIGATION
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+.navigation {
+	border-top: 1px solid #ABCAD9;
+	border-bottom: 1px solid #ABCAD9;
+	background: #E9EEF0;
+	width: 507px;
+	height: 18px;
+	margin: 0 auto;
+	font-size: 0.8em;
+	padding: 8px 10px;
+	}
+	
+	.alignleft {
+		float: left;
+		text-align: left;
+		}
+	
+	.alignright {
+		float: right;
+		text-align: right;
+		}
+	
+	
+	
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		COMMENTS and COMMENT FORM
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#commentformarea {
+	width: 507px;
+	border-top: 1px solid #ABCAD9;
+	border-bottom: 1px solid #ABCAD9;
+	background: #E9EEF0;
+	margin: 0 auto 8px auto;
+	padding: 8px 10px;
+	}
+	
+	#commentform {
+		margin: 15px 0 10px 40px;
+		}
+	
+	#commentformarea h3 {
+		font-size: 1.3em;
+		font-weight: normal;
+		color: #006699;
+		margin: 10px 0 15px 20px;
+		}
+		
+		#commentform p { margin: 0 0 3px 0;	}
+		
+		#commentform input, #commentform textarea {
+			border: 1px solid #A7A6AA;
+			background: #fff;
+			padding: 3px;
+			font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+			font-size: 0.8em;
+			}
+			
+			#commentform textarea { width: 420px; }
+			
+			#commentform input#submit {
+				font-family: Georgia, "Book Antiqua", "Souvenir Lt BT", "Times New Roman", serif;
+				width: 130px;
+				color: #006699;
+				}
+				
+		h4 {
+			margin: 25px 0 20px 0;
+			text-align: center;
+			font-weight: normal;
+			color: #006699;
+			}
+	
+	ol.commentlist {
+		width: 426px;
+		list-style: none;
+		margin: 0 auto 60px auto;
+		padding: 0;
+		font-size: 0.9em;
+		}
+		
+		ol.commentlist li {
+			margin: 0 0 20px 0;
+			padding: 20px 0 0 0;
+			border-top: 1px solid #ABCAD9;
+			}
+		
+			ol.commentlist p.await_mod {
+				color: #f00;
+				margin: 0 0 8px 0;
+				}
+		
+				ol.commentlist p { margin: 0 0 10px 0; }
+				
+					ol.commentlist span.cmntmeta { color: #006699; }
+				
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		SEARCH AND ARCHIVES
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.sanda h2 {
+	font-size: 1.9em;
+	font-weight: normal;
+	color: #006699;
+	margin: 35px 0 0 0;
+	text-align: center;
+	}
+	
+	.sanda>h2 { margin: 15px 0 0 0; } /* FF Specific */
+	
+	.sanda h3 { margin: 0 40px 15px 40px; }
+
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		SIDEBAR (aka the area where sidebar things go that is actually on the bottom)
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#sidebar {
+	width: 527px;
+	margin: 8px auto 0 auto;
+	background: #E9EEF0;
+	border-top: 1px solid #ABCAD9;
+	border-bottom: 1px solid #ABCAD9;
+	padding: 0 0 25px 0;
+	}
+	
+	#wrapper>#sidebar { padding: 15px 0 25px 0; } /* FF Specific */
+	
+	#categories, #archives, #meta {
+		width: 167px;
+		float: left;
+		display: inline; /* IE */
+		}
+		
+		#categories { margin-left: 20px; }
+		#archives { margin-left: 15px; width: 150px; }
+		#meta { width: 155px; }
+		
+		#sidebar ul, #sidebar ul li, #sidebar ul li ul, #sidebar  ul li ul li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: left;
+			}
+			
+			#pushing_box {
+				width: 35px;
+				height: 100%;
+				float: left;
+				border: 1px solid #E9EEF0;
+				}
+		
+		#sidebar li h2 { 
+			margin: 0;
+			color: #4796E9;
+			font-weight: normal;
+			font-size: 1.9em;
+			}
+		
+		#sidebar ul li ul {
+			padding: 8px 0 15px 20px;
+			}
+			
+			#sidebar ul li ul li a {
+				color: #000;
+				text-decoration: none;
+				}
+				
+				#sidebar ul li ul li a:hover { color: #006699; }
+		
+		input#s {
+			width: 440px;
+			margin: 10px auto 0 auto;
+			border: 1px solid #A7A6AA;
+			background: #fff;
+			padding: 4px 0;
+			color: #ccc;
+			text-align: center;
+			}
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	FEED ICONS
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.feedicon {
+	width: 20px;
+	height: 20px;
+	}
+
+
+	#topbar .feedicon {
+		background: url("./images/feedicon_blue_bg.png") no-repeat;
+		display: block;
+		display: inline; /* IE */
+		float: right;
+		margin: 2px 10px 0 0;
+		}
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		FOOTER
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+		
+#footer {
+	width: 527px;
+	margin: 8px auto 0 auto;
+	background: #D1E6EF;
+	border-top: 1px solid #ABCAD9;
+	border-bottom: 1px solid #ABCAD9;
+	padding: 0;
+	text-align: center;	
+	}
+	
+	#footer p {
+		margin: 0 0 15px 0;
+		padding: 15px 0 0 0;
+		font-size: 0.7em;
+		color: #4796E9;
+		}
+		
+		#wrapper>#footer p { margin: 0; padding: 15px 0 15px 0; } /* FF Specific */
+		
+		#footer p a {
+			color: #4796E9;
+			text-decoration: underline;
+			}
+			
+			#footer p a:hover { color: #4796E9; text-decoration: none; }
+			
+			
+			
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++		
+		Thanks very much for downloading Day Dream. Jim Whimpey, fightingfriends.com
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+		

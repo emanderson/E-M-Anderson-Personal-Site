@@ -1,0 +1,39 @@
+/* Pink October bits */
+.pink #bca_wrapper {background:#E1CDDE;}
+	.pink #bca_inner {background:#E1CDDE;}
+.pink #content_inner {background:url(images/pink-content-wrapper.gif) no-repeat top right;}
+.pink .bca_border {border-top:1px solid #CCADC7;}
+.pink #content_inner a:hover {color:#CAA2C5;}
+.pink #bottom_inner a:hover {color:#CAA2C5 !important;}
+
+/* Green bits */
+.green #bca_wrapper {background:#B2CAA5;}
+	.green #bca_inner {background:#B2CAA5;}
+.green #content_inner {background:url(images/green-content-wrapper.gif) no-repeat top right;}
+.green .bca_border {border-top:1px solid #89A679;}
+.green #content_inner a:hover {color:#89A679;}
+.green #bottom_inner a:hover {color:#89A679 !important;}
+
+/* Brown bits */
+.brown #bca_wrapper {background:#BBA58E;}
+	.brown #bca_inner {background:#BBA58E;}
+.brown #content_inner {background:url(images/brown-content-wrapper.gif) no-repeat top right;}
+.brown .bca_border {border-top:1px solid #A2907D;}
+.brown #content_inner a:hover {color:#B89E83;}
+.brown #bottom_inner a:hover {color:#B89E83 !important;}
+
+/* Red bits */
+.red #bca_wrapper {background:#D86983;}
+	.red #bca_inner {background:#D86983;}
+.red #content_inner {background:url(images/red-content-wrapper.gif) no-repeat top right;}
+.red .bca_border {border-top:1px solid #D84265;}
+.red #content_inner a:hover {color:#D3607B;}
+.red #bottom_inner a:hover {color:#D3607B !important;}
+
+/* Orange bits */
+.orange #bca_wrapper {background:#E1C078;}
+	.orange #bca_inner {background:#E1C078;}
+.orange #content_inner {background:url(images/orange-content-wrapper.gif) no-repeat top right;}
+.orange .bca_border {border-top:1px solid #F2D698;}
+.orange #content_inner a:hover {color:#E6C274;}
+.orange #bottom_inner a:hover {color:#E6C274 !important;}

@@ -1,0 +1,61 @@
+/*
+	vSlider v2.0
+	http://iRui.ac
+
+	The CSS, XHTML and design is licensed under a Creative Commons License
+	http://creativecommons.org/licenses/by/2.5/
+*/
+
+
+/**************/
+/* Footer Box */
+
+#footer {
+	display: block;
+	margin: 0px auto 0px auto;
+	width: 762px;
+	clear: both;
+}
+
+
+#footer-box {
+	display: table;
+	text-align: right;
+	width: 730px;
+	margin: 30px 16px 0px 16px;
+}
+
+
+#footer-box .cc {
+	float: left;
+	padding: 0;
+	bottom: 0;
+	vertical-align: bottom;
+	text-align: left;
+}
+
+
+#footer-box .ads {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+
+/* End of Footer Box */
+/*********************/
+
+
+
+/**********************/
+/* Footer Typography */
+
+#footer-box .cc a{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-variant: normal;
+}
+
+/* End of Footer Typography */
+/****************************/

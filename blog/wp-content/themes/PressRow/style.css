@@ -1,0 +1,246 @@
+/*
+Theme Name:		PressRow
+Theme URI:		http://www.findcreditcards.org/pressrow/
+Description:	An awesome theme developed for <a href="http://www.findcreditcards.org/">FindCreditCards</a> by the digitally-famous <a href="http://www.pearsonified.com/">Chris Pearson</a>.
+Version:		0.1
+Author:			Chris Pearson
+Author URI:		http://www.pearsonified.com/
+*/
+
+body { background: #fff; color: #444; font: 62.5% Georgia, "Times New Roman", Times, serif; text-align: center; }
+
+* { padding: 0; margin: 0; }
+
+
+/*---:[ global elements ]:---*/
+
+a { color: #1c9bdc; text-decoration: underline; }
+
+	a:visited { color: #000; text-decoration: underline; }
+
+	a:hover { color: #1873a1; text-decoration: underline; }
+
+p { margin: 0 0 15px 0; }
+
+blockquote { padding: 5px 10px 0 10px; margin: 0 0 15px 0; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; background: #f5f5f5; color: #666; }
+
+	blockquote p { margin-bottom: 7px; }
+	
+code { color: #090; font-family: "Courier New", Courier, monospace; }
+
+pre { width: 500px; margin-bottom: 15px; font-size: 1.2em; float: left; }
+
+* html pre { font-size: 1.0em; overflow: hidden; }
+
+
+/*---:[ headlines ]:---*/
+
+h1 { font-weight: bold; font-size: 4.0em; line-height: 1.8em; }
+
+	#header h1 { text-align: right; }
+	
+	h1 a, h1 a:visited, h1 a:hover { color: #222; text-decoration: none; }
+	
+h2 { font-weight: normal; font-size: 2.0em; }
+
+	.post h2 { color: #000; line-height: normal; padding-top: 10px; margin-bottom: 10px; }
+	
+		.post h2 a { color: #000; text-decoration: none; }
+		
+		.post h2 a:visited { color: #666; text-decoration: none; }
+		
+		.post h2 a:hover { color: #1c9bdc; text-decoration: none; }
+	
+	#sidebar h2 { color: #999; }
+	
+	h2.archive_head { font-size: 2.4em; padding: 4px 4px 4px 32px; background: #f5f5f5 url('images/icon_folder.gif') 5px 50% no-repeat; border-bottom: 1px solid #bbb; margin-bottom: 30px; }
+	
+	h2.comment_head { padding-left: 29px; line-height: 2.0em; background: url('images/icon_comment.gif') 0 50% no-repeat; color: #999; }
+	
+	h2.form_head { color: #999; }
+	
+h3 { font-weight: normal; font-size: 1.5em; margin-bottom: 4px; color: #999; }
+
+h4 { display: inline; font-weight: normal; padding: 4px; line-height: 1.0em; font-size: .8em; text-transform: uppercase; background: #f5f5f5; border-bottom: 1px solid #ddd; }
+
+
+/*---:[ core layout elements ]:---*/
+
+#container { width: 770px; margin: 0 auto; }
+
+	#page { width: 770px; float: left; }
+
+		#header { width: 770px; margin-bottom: 30px; float: left; }
+			
+		#content_box { width: 770px; padding-bottom: 5px; text-align: left; float: left; }
+		
+			#content { width: 500px; padding-right: 40px; overflow: visible; float: left; }
+			
+			* html #content { overflow: hidden; }
+			
+			#sidebar { width: 230px; color: #222; font-size: 1.2em; line-height: 1.5em; float: left; }
+			
+			* html #sidebar { overflow: hidden; }
+			
+		#footer { width: 770px; padding-top: 8px; border-top: 4px solid #222; font-size: 1.2em; text-transform: uppercase; letter-spacing: .3em; float: left; clear: both; }
+		
+
+/*---:[ header styles ]:---*/
+
+#nav { width: 100%; border-top: 4px solid #222; border-bottom: 2px solid #222; float: left; }
+
+	#nav ul { list-style: none; }
+
+		#nav li { float: left; }
+		
+			#nav li a, #nav li a:visited { display: block; height: 3.0em; padding: 0 1.2em; line-height: 3.0em; color: #222; text-decoration: none; font-size: 1.4em; text-transform: uppercase; letter-spacing: .3em; float: left; }
+		
+			#nav li a:hover { color: #fff; background: #222; text-decoration: none; }
+			
+			.blog #nav li a.blog, .blog #nav li a.blog:visited, .archive #nav li a.archives, .archive #nav li a.archives:visited, .about #nav li a.about, .about #nav li a.about:visited { background: #222; color: #fff; cursor: default; }
+
+#pic { width: 770px; height: 200px; border-bottom: 2px solid #222; clear: both; float: left; }
+
+	.blog #pic { background: url('images/churchill.jpg') no-repeat; }
+	
+	.archive #pic { background: url('images/books.jpg') no-repeat; }
+	
+	.about #pic { background: url('images/deuce_stream.jpg') no-repeat; }
+
+
+/*---:[ content styles ]:---*/
+
+.post { width: 500px; margin-bottom: 50px; font-size: 1.4em; line-height: 1.7em; color: #444; float: left; }
+
+	.entry ul, .entry ol { margin: 0 0 15px 40px; color: #000; }
+	
+	.entry ul { list-style-type: square; }
+	
+		.entry li { padding: 3px 0; }
+		
+			.entry ul li ul, .entry ul li ol, .entry ol li ul, .entry ol li ol { margin: 0 0 0 30px; }
+	
+	.entry dl { margin-bottom: 15px; }
+			
+	.entry dt { font-weight: bold; color: #000; }
+	
+	.entry dd { margin: 0 0 0 20px; font-style: italic; }
+
+	.entry img.left { padding: 6px; margin: 0 10px 5px 0; background: #f5f5f5; border: 1px solid #bbb; float: left; }
+
+	.entry img.left_off { margin: 0 10px 5px 0; float: left; }
+	
+	.entry img.right { padding: 6px; margin: 0 0 5px 10px; background: #f5f5f5; border: 1px solid #bbb; float: right; }
+
+	.entry img.right_off { margin: 0 0 5px 10px; float: right; }
+	
+	.entry img.center { display: block; padding: 6px; margin: 0 auto 15px auto; background: #f5f5f5; border: 1px solid #bbb; }
+	
+	.entry img.center_off { display: block; margin: 0 auto 15px auto; }
+	
+	.post_meta { width: 480px; padding: 4px 10px; border-top: 1px dotted #bbb; border-bottom: 1px dotted #bbb; background: #f5f5f5; line-height: normal; float: left; }
+	
+		p.num_comments { padding-left: 27px; margin-bottom: 0; line-height: 1.6em; background: url('images/icon_excl.gif') 0 50% no-repeat; float: right; }
+		
+		p.tagged { padding-left: 27px; margin-bottom: 0; line-height: 1.6em; background: url('images/icon_file.gif') 0 50% no-repeat; float: left; }
+	
+.navigation { width: 480px; padding: 10px; margin-bottom: 30px; font-size: 1.4em; line-height: 1.7em; background: #f5f5f5; float: left; }
+
+* html .navigation { line-height: normal; }
+	
+	.previous { padding-left: 27px; margin-bottom: 0; background: url('images/icon_previous.gif') 0 50% no-repeat; float: left; }
+	
+	.next { padding-right: 27px; margin-bottom: 0; background: url('images/icon_next.gif') 100% 50% no-repeat; float: right; }
+	
+	.jump { padding: 4px 6px 4px 33px; margin: 0 0 10px 10px; background: #f5f5f5 url('images/icon_down.gif') 6px 50% no-repeat; float: right; clear: both; }
+
+
+/*---:[ sidebar styles ]:---*/
+
+#sidebar ul { list-style: none; }
+
+	#sidebar ul li { width: 230px; margin-bottom: 25px; float: left; }
+
+		.sidebar_section { width: 230px; padding: 10px 0 7px 0; background: #f5f5f5; float: left; }
+		
+			.sidebar_section p { padding: 0 10px; margin-bottom: 10px; }
+			
+			.sidebar_section p.center { text-align: center; }
+			
+			.sidebar_section img.off { border: none; }
+
+			#sidebar ul li ul, #sidebar ul li ol { list-style: square; width: 210px; padding-left: 20px; margin-bottom: 12px; }
+			
+				#sidebar ul li ul li, #sidebar ul li ol li { width: 200px; padding: 3px 10px 3px 0; margin-bottom: 0; }
+				
+					.quick_date { padding-left: 10px; color: #999; }
+	
+
+/*---:[ footer styles ]:---*/
+
+#footer p { text-align: center; }
+
+#footer a, #footer a:visited { color: #222; text-decoration: none; }
+
+#footer a:hover { color: #222; text-decoration: none; }
+
+
+/*---:[ comment styles ]:---*/
+
+#comments { width: 500px; font-size: 1.4em; line-height: 1.7em; color: #444; float: left; clear: both; }
+
+	ul.comment_list { list-style: none; margin-bottom: 40px; border-top: 1px dotted #bbb; float: left; }
+		
+		ul.comment_list li, ul.comment_list li.alt, ul.comment_list li.author_comment_, ul.comment_list li.author_comment_alt { width: 480px; padding: 15px 10px 5px 10px; border-bottom: 1px dotted #bbb; float: left; }
+
+		ul.comment_list li.alt, ul.comment_list li.author_comment_alt { background: #f5f5f5; }
+		
+			.comment_intro { width: 480px; margin-bottom: 15px; line-height: normal; float: left; }
+			
+			* html .comment_intro { margin-bottom: 0; }
+			
+			.author_comment_ .comment_intro { width: 453px; padding-left: 27px; background: url('images/icon_author.gif') 0 50% no-repeat; }
+			
+			.author_comment_alt .comment_intro { width: 453px; padding-left: 27px; background: url('images/icon_author_alt.gif') 0 50% no-repeat; }
+			
+				img.gravatar { float: right; margin: 0 0 10px 10px; }
+			
+				.comment_author { font-weight: bold; font-size: 1.2em; }
+				
+				.comment_meta { font-size: .9em; }
+				
+					.comment_meta a, .comment_meta a:visited, .comment_meta a:hover { color: #999; text-decoration: none; }
+		
+			#comments .entry { clear: both; }
+			
+			#comments .entry ul, #comments .entry ol { margin: 0 0 15px 40px; color: #000; border: none; float: none; }
+	
+			#comments .entry ul { list-style-type: square; }
+	
+				#comments .entry li { width: auto; padding: 3px 0; border: none; float: none; }
+		
+					#comments .entry ul li ul, #comments .entry ul li ol, #comments .entry ol li ul, #comments .entry ol li ol { margin: 0 0 0 30px; }
+
+
+/*---:[ comment form styles ]:---*/
+
+#comment_form { width: 500px; padding: 10px 0; float: left; }
+
+	#comment_form p { padding: 6px 0; margin-bottom: 0; }
+	
+		#comment_form label { padding-left: 10px; font-size: .9em; }
+
+		#comment_form .text_input { width: 40%; padding: 3px; color: #444; font: normal 1.4em Georgia, "Times New Roman", Times, serif; border-top: 2px solid #999; border-left: 2px solid #999; border-right: 1px solid #fff; border-bottom: 1px solid #fff; }
+		
+		#comment_form .text_area { width: 95%; padding: 3px; color: #444; font: normal 1.4em Georgia, "Times New Roman", Times, serif; border-top: 2px solid #999; border-left: 2px solid #999; border-right: 1px solid #fff; border-bottom: 1px solid #fff; }
+	
+		#comment_form .text_input:focus, #comment_form .text_area:focus { border-top: 2px solid #444; border-left: 2px solid #444; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+	
+
+/*---:[ search form styles ]:---*/
+
+#search_form { text-align: center; }
+
+	#search_form .text_input { width: 85%; padding: 3px; color: #444; font: normal 1.4em Georgia, "Times New Roman", Times, serif; border-top: 1px solid #999; border-left: 1px solid #999; border-right: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; }
+	
+	#search_form .text_input:focus { border-top: 1px solid #444; border-left: 1px solid #444; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }

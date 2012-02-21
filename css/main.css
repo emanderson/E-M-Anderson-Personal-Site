@@ -1,0 +1,8 @@
+div#title { color: white; background: black; }
+div.centered { text-align: center; }
+div.rounded25 { padding: 5px; margin: 5px; -webkit-border-radius:25px; }
+div.vitaminName { color: blue; background: red; }
+
+div.vitaminHistory { }
+div.rounded5 { padding: 5px; margin: 5px; -webkit-border-radius:5px; }
+div.vitaminDay { display: inline-block; width: 2em; background: green; color: white;}

@@ -1,0 +1,17 @@
+body {
+	font-family: Verdana;
+	
+	padding: 10px;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+ol {
+	padding: 5px;
+}
+
+span.thingText {
+	padding-left: 5px;
+}

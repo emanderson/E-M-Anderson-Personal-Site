@@ -1,0 +1,385 @@
+/*
+Theme Name: wpjeriko01
+Theme URI: http://www.i-jeriko.de/2006/05/07/wordpress-theme-wpjeriko01/
+Description: 2 column theme with a highlight area for the latest post
+Author: Christoph Boecken
+Author URI: http://www.i-jeriko.de
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*--- Structure ---*/
+#wrap {
+	margin: 0 auto;
+	width: 780px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#header {
+	width: 780px;
+	height: 120px;
+}
+
+#featured {
+	width: 780px;
+	}
+	
+	#featured div {
+		padding: 15px 0 15px;
+	}
+	
+	#featured div.star {
+		background: url(./_img/featured_star.gif) no-repeat bottom left;
+	}
+	
+	#featured div div {
+		padding: 0;
+	}
+
+#main {
+	width: 780px;
+	background: url(./_img/bg_main.png) no-repeat bottom right;
+}
+
+#content {
+	float: left;
+	width: 500px;
+	padding: 35px 30px 20px;
+}
+
+#sidebar {
+	float: left;
+	width: 200px;
+	padding: 25px 10px 0;
+}
+
+#footer {
+	width: 780px;
+	height: 20px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/*--- Header ---*/
+#header h1 {
+	padding: 30px 0 0 30px;
+	font: normal 2.8em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+#header h2 {
+	font: normal 1.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding-left: 30px;
+}
+
+/*--- Featured ---*/
+#featured .fheader {
+	float: left;
+	width: 335px;
+	text-align:right;
+	margin-right: 20px;
+	padding-left: 15px;
+	}
+	
+	.fheader h1 {
+			font: normal 2.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	
+	.fheader .meta {
+		font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+		color: #FFF;
+	}
+	
+		.meta img {
+			margin-left: 10px;
+		}
+
+			
+#featured .fcontent {
+	float: left;
+	width: 390px;
+	font: normal 1.3em/1.5em Arial, Helvetica, sans-serif;
+}
+
+
+	.fcontent img {
+		display: none;
+	}
+
+		.fcontent .more-link {
+			display: inline;
+		}
+	
+		.fcontent .more-link a {
+			background: url(./_img/featured_readmore.png) no-repeat right top;
+			padding-right: 13px;
+		}
+
+#featured .fsingle {
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0 10px;
+}
+
+	.fsingle h1 {
+		font: normal 2.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+
+	 p {
+		margin-bottom: 1em;
+	}
+	
+/*--- Entries ---*/
+.entry {
+	font: normal 1.3em/1.5em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom: 3em;
+}
+
+.entry h1 {
+	font: normal 1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.entry h2 {
+	font: normal 1.4em/1.5em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.entry h3 {
+	font: italic bold 1.2em/1.5em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+.entry .meta {
+	margin-bottom: 0.5em;
+}
+
+.entry img {
+	padding: 1px;
+	border: 1px solid #CCC;
+}
+
+	.entry .meta img {
+		padding: 0;
+		border: none;
+	}
+
+.entry .more-link {
+	margin-top: -1em;
+}
+
+.entry .more-link a {
+	background: url(./_img/content_readmore.png) no-repeat top right;
+	padding-right: 13px;
+}
+
+.navigation {
+	font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+	.navigation .alignleft {
+		float: left;
+	}
+
+	.navigation .alignright {
+		float: right;
+	}
+
+/*--- Recent Comments ---*/
+#commentlist {
+	list-style-type: none;
+	width: 90%;
+	margin: 2em auto 0;
+}
+
+	#commentlist .gravatar {
+		float: right;
+		width: 50px;
+		padding: 5px 10px 10px;
+	}
+
+
+	#commentlist li {
+		clear: both;
+		display: block;
+		padding: 15px 15px 5px;
+		border-bottom: 1px solid #FFF;
+	}
+
+
+	#commentlist a {
+		font-weight: bold;
+	}
+
+	#commentlist p {
+		margin-top: 1em;
+	}
+
+#trackbacklist {
+	margin: 1em 0 0 4.5em;
+	padding-left: 4.5em;
+}
+
+/*--- Comment Form ---*/
+#commentform {
+	margin-top: 1em;
+}
+
+#commentform fieldset {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em;
+	border: 1px solid #142E63;
+}
+
+	#commentform .cfrow {
+		clear: both;
+		padding-bottom: 2em;
+	}
+
+	#commentform .cfrow label {
+		float: left;
+		width: 49%;
+	}
+
+	#commentform .cfrow input {
+		float: right;
+		width: 50%;
+		border: 1px solid #142E63;
+		padding: 2px 0;
+	}
+
+	#commentform .cfrow textarea {
+		width: 100%;
+		border: 1px solid #142E63;
+	}
+
+	#commentform .cfrow #submit {
+		float: right;
+		width: 100%;
+		padding: 0.5em 0;
+		margin-top: -1em;
+		border: 1px solid #142E63;
+	}
+
+
+/*--- Sidebar ---*/
+#sidebar h2 {
+	display: none;
+}
+#sidebar form {
+	margin-bottom: 25px;
+}
+
+#sidebar fieldset {
+	border: none;
+}
+
+#sidebar #s {
+	width: 188px;
+	padding: 2px 5px;
+	border: 1px solid black;
+	font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+#sidebar ul {
+	list-style-type: none;
+	font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0 auto 25px;
+}
+
+	#sidebar ul ul {
+		font-size: 0.9em;
+	}
+
+	#sidebar li {
+		height: 1.5em;
+	}
+
+	#sidebar>li {
+		min-height: 1.5em;
+	}
+
+	#sidebar li a {
+		display: block;
+		text-decoration: none;
+		padding-left: 22px;
+	}
+
+#about a {
+	background: url(./_img/sidebar_user.png) no-repeat left;
+}
+
+#categories a {
+	background: url(./_img/sidebar_categories.png) no-repeat left;
+}
+
+#archives a {
+	background: url(./_img/sidebar_archive.png) no-repeat left;
+}
+
+#feeds a {
+	background: url(./_img/sidebar_feed.png) no-repeat left;
+}
+
+/*--- Footer ---*/
+#footer p {
+	font: normal 1.1em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/*--- Archive and categories ---*/
+#archivelist {
+	margin-left: 2em;
+	list-style-type: circle;
+}
+
+/*--- Generic stuff ---*/
+blockquote {
+	width: 90%;
+	margin: 1em auto;
+	padding: 1em;
+	font: italic 1.3em "Times New Roman", serif;
+}
+
+blockquote cite {
+	display: block;
+	text-align: right;
+	font: italic 0.9em "Times New Roman", serif;
+	margin-top: 1em;
+}
+
+ul {
+	margin: 0 0 1em 2em;
+}
+
+pre {
+	width: 90%;
+	margin: 1em auto;
+	padding: 1em;
+	overflow: scroll;
+}
+
+.editlink img {
+	border: none;
+}

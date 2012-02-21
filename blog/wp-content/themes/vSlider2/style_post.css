@@ -1,0 +1,224 @@
+/*
+	vSlider v2.0
+	http://iRui.ac
+
+	The CSS, XHTML and design is licensed under a Creative Commons License
+	http://creativecommons.org/licenses/by/2.5/
+*/
+
+
+
+/************/
+/* Post Box */
+
+.post-top, .title, .post-bottom {
+	width:  500px;
+}
+
+.post-top, .post-top-closed {
+	background: url("images/post_top.gif") no-repeat left top;
+	padding: 10px 0px 0px 0px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.post-top-closed {
+	background: url("images/post_top_closed.gif") no-repeat left top;
+}
+
+.post-bottom {	
+	background: url("images/post_bottom.gif") no-repeat left bottom;	
+	overflow: hidden;
+	padding: 0px 0px 10px 0px;
+}
+
+.post {
+	background: url("images/post_body.gif") repeat-y left;
+	padding: 0px;
+}
+
+.post-body {
+	/* This combination ensures anything that overflows this box is hidden*/
+	position: relative;
+	overflow: hidden;
+	margin: 0 12px 0 12px;
+	width: 476px;
+}
+
+.post-body-closed {
+	display: none;
+}
+
+.post-title-top, .post-title-top-closed {
+	position: relative;
+	background: url("images/post_title_top.gif") no-repeat left top;
+	padding: 8px 0px 0px 0px;
+	margin: 0px;	
+}
+
+.post-title-top-closed {
+	background: url("images/post_title_top_closed.gif") no-repeat left top;
+}
+
+.post-title-bottom, .post-title-bottom-closed {	
+	position: relative;
+	background: url("images/post_title_bottom.gif") no-repeat left bottom;	
+	padding: 0px 0px 4px 0px;
+	overflow: hidden;
+
+	/* Needed for IE */
+	height: 100%;
+}
+
+.post-title-bottom-closed {	
+	background: url("images/post_title_bottom_closed.gif") no-repeat left bottom;	
+}
+
+.post-title, .post-title-closed {
+	background: url("images/post_title.gif") repeat-y left;
+	/* This padding is important for the slider */
+	padding: 0px 40px 0px 15px;
+}
+
+.post-title-closed {
+	background: url("images/post_title_closed.gif") repeat-y left;
+}
+
+
+.post-title-filler, .post-title-filler-closed {
+	background: url("images/post_title.gif") repeat-y left;
+	/* This padding is important for the slider and for the amount of filling*/
+	padding: 4px 52px 0px 15px;
+}
+
+.post-title-filler-closed {
+	background: url("images/post_title_closed.gif") repeat-y left;
+}
+
+
+.post-body-top, .post-body-top-closed {
+	background: url("images/post_body_top.gif") no-repeat left top;
+	padding: 0;
+	margin: 0;
+	height: 8px;
+	overflow: hidden;
+}
+
+.post-body-top-closed {
+	height: 2px;
+	background: url("images/post_body_top_closed.gif") no-repeat left top;
+}
+
+.post-slider, .post-slider-closed {
+	position:absolute;
+	background: url("images/slider_down.gif") no-repeat left;
+	height: 23px;
+	width: 24px;
+	left: 462px;
+	cursor: pointer;
+}
+
+.post-slider-closed {
+	background: url("images/slider_up.gif") no-repeat left;
+}
+
+.post .postmetadata {
+	padding-top: 5px;
+	margin: 0px;
+}
+
+.post input, .post textarea {	
+	border: 1px solid #acb0b5;
+	padding: 1px 5px 1px 5px;
+}
+
+.post .button {
+	margin: 0;
+	padding: 0 5px;
+	width: auto;
+	height: 1.5em;
+	background-color:#e9eff6;
+	border: 1px outset #a4b5bd;
+	cursor: pointer;
+}
+
+/* End of Post Box */
+/*******************/
+
+
+
+/*******************/
+/* Post Typography */
+
+.post {
+	line-height: 1.5em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;	
+}
+
+.post p {	
+	margin:  0px;
+	padding: 10px;
+}
+
+.post pre {	
+	margin:  0;
+	padding-left: 10px;
+}
+
+
+
+
+/* This is mainly for password protected posts */
+.post form { 
+	text-align:center;
+}
+
+.postmetadata {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	color: #777;
+}
+
+.post small {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin: 0px;
+	color: #777;
+}
+	
+
+
+/* End of Post Typography */
+/**************************/
+
+
+/**************/
+/* Post Lists */
+
+.post ul, .post ol {
+	margin: 0;
+	padding: 0 10px 0 10px;
+	text-indent: 0px;
+	}
+
+.post ol li {
+	margin: 7px 0 8px 30px;
+}
+
+.post ul li{
+	margin: 7px 0px 8px 30px;
+	list-style: url("images/bullet.gif");
+}
+
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+/* End of Post Lists */
+/*********************/

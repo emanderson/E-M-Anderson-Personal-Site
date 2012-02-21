@@ -1,0 +1,753 @@
+/*  
+Theme Name: Nine Shades of Green
+Theme URI: http://stevish.com/
+Description: A step in a different direction by the Stevish. This is a cool green, quick-loading theme that employs a CSS popout menu, compatable with all newer browsers including IE5 and up. Theme tested on WP 1.5 and 2.0.
+Version: 1.0.1
+Author: Stevish
+Author URI: http://stevish.com/
+
+	Started with the Wordpress Default theme.
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+	Have fun, and don't be afraid to contact me if you have questions.
+
+	Note: The Link Buttons are in searchbar.php
+
+	1.0.1 - Fixed Buttons in IE; Cleaned up some unused code.
+*/
+
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background-color: #231;
+	color: #000;
+	text-align: center;
+	}
+
+#page {
+	text-align: left;
+	}
+
+
+#content {
+	font-size: 1.2em
+	}
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+
+.alt {
+	background-color: #dec;
+	border-top: 1px solid #dec;
+	border-bottom: 1px solid #dec;
+	}
+
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+
+h1 {
+	font-size: 6em;
+	text-align: center;
+	}
+
+.description {
+	font-size: 1.2em;
+	text-align: center;
+	}
+
+h2 {
+	font-size: 1.6em;
+	}
+
+h2.pagetitle {
+	font-size: 1.6em;
+	}
+
+#sidebar h2 {
+	font-family: 'Lucida Grande', Verdana, Sans-Serif;
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1.3em;
+	}
+
+h1, h1 a, h1 a:hover, h1 a:visited, .description {
+	text-decoration: none;
+	color: #f0ffd1;
+	}
+
+h2, h2 a, h2 a:visited {
+	color: #fff;
+	}
+
+h3, h3 a, h3 a:visited {
+	color: #000;
+	}
+
+.post h2, .post h2 a, .post h2 a:visited, .post h2 a:hover {
+	color: #000;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+.entry p a:visited {
+	color: #453;
+	}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+	
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar {
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .postmetadata, .nocomments, strike {
+	color: #555;
+	}
+	
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a, h3 a:hover {
+	color: #005;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #453;
+	text-decoration: none;
+	}
+	
+#wp-calendar #prev a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+body {
+	margin: 0;
+	padding: 0; 
+	}
+
+#page {
+	float: left;
+	background-color: #f5fff0;
+	margin-left: 0px;
+	padding: 0;
+	width: 520px;
+	border-left: 2px solid #050f00;
+	}
+	
+#centerwrap {
+	width: 683px;
+	background-color: #ab9;
+	border: solid 2px #050f00;
+	margin: 0 auto;
+	}
+
+#header {
+	float: left;
+	padding: 0;
+	margin: 0;
+	margin-left: 0;
+	height: 140px;
+	width: 100%;
+	background-color: #050f00;
+	}
+
+#headerimg {
+	margin: 0;
+	height: 140px;
+	width: 100%;
+	}
+
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px 20px;
+	margin: 0px 0 0;
+	width: 450px;
+	}
+
+.widecolumn {
+	float: left;
+	padding: 0 0 20px 20px;
+	margin: 0px 0 0;
+	width: 450px;
+	}
+	
+.post {
+	margin: 0 0 40px;
+	text-align: justify;
+	}
+
+.postpost {
+	border-bottom: 3px solid #120;
+	clear: both;
+	padding-bottom: 10px;
+	text-align: right;
+	}
+
+.widecolumn .post {
+	margin: 0;
+	}
+
+.narrowcolumn .postmetadata {
+	margin: 0;
+	}
+
+.widecolumn .postmetadata {
+	margin: 30px 0;
+	}
+	
+#footer {
+	padding: 0 5px;
+	margin: 0 auto;
+	width: 674px;
+	clear: both;
+	border-top: 2px solid #050f00;
+	background-color: #050f00;
+	}
+
+#footer a, #footer a:visited, #footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+	}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: right;
+	color: #fff;
+	}
+
+.entry {
+	border-top: 1px dashed #120;
+	clear: both;
+	}
+
+/* End Structure */
+
+
+
+/*	Begin Headers */
+h1 {
+	padding-top: 20px;
+	margin: 0;
+	}
+
+h1.sidetitle {
+	padding: 0;
+	font-size: 2em;
+	color: #000;
+	}
+
+.description {
+	text-align: center;
+	}
+
+h2 {
+	margin: 10px 0 0;
+	}
+
+h2.pagetitle {
+	margin-top: 10px;
+	color: #000;
+	}
+
+.post h2 {
+	padding-right: 7px;
+	font-size: 2.5em;
+	text-align: left;
+	}
+
+#sidebar h2 {
+	margin: 5px 0 0;
+	padding: 0;
+	}
+
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+	}
+
+h3#comments {
+	padding: 0;
+	margin: 40px 0 0 0 ;
+	width: 100%;
+	border-bottom: 2px solid #231;
+	}
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+	
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+	
+.alignleft {
+	float: left
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	} 
+
+.entry ul li:before {
+	content: "\00BB \0020";
+	}
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul {
+	margin: 0;
+	}
+
+
+ol li, {
+	list-style: decimal outside;
+	}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 0;
+	padding: 8px; 
+	float: right;
+	}
+
+#searchbar #searchform #s {
+	width: 110px;
+	padding: 2px;
+	background-color: #f5fff0;
+	}
+
+#searchbar #searchsubmit {
+	padding: 1px;
+	background-color: #bca;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform {
+	border-top: 2px solid #231;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	background-color: #f5fff0;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	background-color: #bca;
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+
+
+/* Begin Sidebar */
+#sidebar {
+	padding: 10px 5px;
+	position: relative;
+	float: left;
+	top: 0;
+	left: 0;
+	width: 150px;
+	color: #fff;
+	border: none;
+	background-color: #ab9;
+	text-align: left;
+	}
+
+#searchbar {
+	padding: 0;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	border-bottom: 3px solid #050f00;
+	background-color: #f5fff0;
+	text-align: justify;
+	}
+
+#searchbar ul li {
+	display: inline;
+	margin: 0 10px 0 0;
+	background-color: #bca;
+	cursor: pointer;
+	border-top: 2px solid #eee;
+	border-left: 2px solid #eee;
+	border-right: 2px solid #897;
+	border-bottom: 2px solid #897;
+	padding: 2px 2px 2px 6px;
+	font-size: 1.2em;
+	}
+
+#searchbar a, #searchbar a:visited, #searchbar a:hover, #searchbar a:active {
+ 	text-decoration: none;
+	color: #000;
+	}
+
+#searchbar ul {
+	float: left;
+	white-space: nowrap;
+	padding: 0;
+	margin-left: 5px;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+/* End Sidebar */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 3px solid #dec;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+a img {
+	border: none;
+	}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	}
+
+/* End Various Tags & Classes*/
+
+/* Begin Popout Sidebar */
+
+#sidebar ul, #sidebar ul ul { /* remove bullets and list indents */
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+/* style, color and size links and headings to suit */
+#popout a, #popout ul h2 {
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #bca #786 #453 #ab9;
+margin: 0;
+padding: 3px 2px;
+}
+
+#popout ul h2 {
+color: #fff;
+background: #000;
+text-transform: uppercase;
+background-image: url(images/raquo.gif);
+background-position: center right;
+background-repeat: no-repeat;
+
+}
+
+#popout a {
+color: #000;
+background-color: #f5fff0;
+text-decoration: none;
+}
+
+#popout ul {
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#popout a:hover {
+color: #453;
+background: #fff;
+}
+
+
+#popout li {
+/* make the list elements a containing block for the nested lists */
+position: relative;
+} 
+
+#popout ul ul {
+position: absolute;
+top: 0;
+left: 100%; /* to position them to the right of their containing block */
+width: 100%; /* width is based on the containing block */
+}
+
+div#popout ul ul,
+div#popout ul li:hover ul ul
+{display: none;}
+
+div#popout ul li:hover ul,
+div#popout ul ul li:hover ul
+{display: block;}
+
+
+a#nopoplink {
+	line-height: 2em;
+	position: relative;
+	top: 5px;
+	font-size: 0.9em;
+	}
+
+
+a#poplink {
+	line-height: 2em;
+	position: relative;
+	top: 5px;
+	font-size: 0.9em;
+	display: none;
+	}
+
+/* End Popout Sidebar */
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */

@@ -1,0 +1,33 @@
+/*
+	vSlider v2.0
+	http://iRui.ac
+
+	The CSS, XHTML and design is licensed under a Creative Commons License
+	http://creativecommons.org/licenses/by/2.5/
+*/
+
+
+.slideboxcontainer{
+	z-index: 100;
+	overflow: hidden;
+	position:relative;
+}
+
+.slidebox{
+	position:relative;
+	left: 0;
+	top: 0;
+}
+
+.slideboxcontainer-closed{
+	z-index: 100;
+	overflow: hidden;
+	position:relative;
+	height: 0px;
+}
+
+.slidebox-closed{
+	position:relative;
+	left: 0;
+	top: -6000px;
+}

@@ -1,0 +1,53 @@
+/*
+	vSlider v2.0
+	http://iRui.ac
+
+	The CSS, XHTML and design is licensed under a Creative Commons License
+	http://creativecommons.org/licenses/by/2.5/
+*/
+
+
+/***************/
+/* Weather Box */
+
+.weather {
+	margin: 0;
+	padding: 0;
+}
+
+ul.weather,  {
+	margin: 0;
+	padding: 0;
+}
+
+ul.weather li {
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0;
+}
+
+
+/* End of Weather box */
+/**********************/
+
+
+/**********************/
+/* Weather Typography */
+
+
+
+.weather  { 
+	text-align: center; 
+}
+
+.weather_title { 
+	font-size: 0.9em;
+	font-weight: bold; 
+}
+
+.weather_info {  
+	font-size: 0.9em;
+}
+
+/* End of Weather Typography */
+/*****************************/

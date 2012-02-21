@@ -1,0 +1,35 @@
+/*540px wide*/
+#primary{width:540px;}
+#secondary{width:362px;}
+	#sidebar-wide{width:360px;}
+	#sidebar-1{width:180px;}
+	#sidebar-2{width:180px;}
+
+/*480px wide*/
+.content-480px #primary{width:480px;}
+.content-480px #secondary{width:422px;}
+	.content-480px #sidebar-wide{width:420px;}
+	.content-480px #sidebar-1{width:210px;}
+	.content-480px #sidebar-2{width:210px;}
+	
+/*580px wide*/
+.content-580px #primary{width:580px;}
+.content-580px #secondary{width:322px;}
+	.content-580px #sidebar-wide{width:320px;}
+	.content-580px #sidebar-1{width:160px;}
+	.content-580px #sidebar-2{width:160px;}
+	
+/*620px wide*/
+.content-620px #primary{width:620px;}
+.content-620px #secondary{width:282px;}
+	.content-620px #sidebar-wide{width:280px;}
+	.content-620px #sidebar-1{width:140px;}
+	.content-620px #sidebar-2{width:140px;}
+
+/*subscribe box*/
+#pp-subscribe li {width:100%;}
+#pp-subscribe.pp-email-true li {width:50%;}
+#pp-subscribe.pp-email-true li .email-narrow {display:none;}
+
+.content-540px #pp-subscribe.pp-email-true a {padding-left:45px;}
+.content-580px #pp-subscribe li, .content-620px #pp-subscribe li{width:100%;}

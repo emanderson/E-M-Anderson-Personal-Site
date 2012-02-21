@@ -1,0 +1,91 @@
+/*  
+Theme Name: Orchid
+Theme URI: http://www.sunaryohadi.info/
+Description: A simple theme from <a href="http://sunaryohadi.info/">Sunaryo Hadi</a>.
+Version: 0.2
+Author: Sunaryo Hadi
+Author URI: http://sunaryohadi.info/
+
+	This theme was designed and built by Sunaryo Hadi,
+	whose blog you will find at http://sunaryohadi.info/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+	Have fun, and don't be afraid to contact me if you have questions.
+*/
+
+/* Begin Typography & Colors */
+body {width:800px; font: 11px/18px Tahoma,Arial,Verdana; letter-spacing:1px; line-height:14px;
+color: #010; margin:0 auto; padding: 0;text-align:left; background: #fff none;}
+
+/* Set Layout Section */
+#page,#header,#content,#sidebar,#footer { overflow:hidden; display:inline-block }
+#page,#header,#footer {width:100%} /* safari and opera need this */
+#header {height:150px;background:#fff url(images/header.jpg) no-repeat top;}
+#page {background:#fff url(images/pagebg.jpg) repeat-y top;}
+#content {float:right;width:500px; margin:0; padding:15px 50px 15px 30px;}
+#sidebar {width:170px; margin: 0; padding:10px 10px 10px 40px;}
+#footer {clear:both; height: 60px; background:#fff url(images/footerbg.jpg) no-repeat top; text-align:right;line-height:16px;}
+
+/* General */
+a { color: #586D16 }
+a:hover { color: #f60; }
+form {margin:0;padding:0;} /* IE need this */
+input, textarea {font:11px/16px Tahoma; letter-spacing:1px; padding:2px 5px;}
+
+/* Header Section */
+#header h1 {text-align:right;font:bold 2.4em Arial;margin:0; padding: 40px 35px 0 25px;}
+#header h2 {text-align:right;font:1.2em Arial;margin:0;padding: 0 35px 0 25px;}
+#header a {text-decoration: none;}
+
+#headerimg {height: 111px;}
+#headermenu {height: 26px;}
+
+/* Header Page Menu Section */
+#pagemenu {margin:0;padding:0 35px 0 35px; text-align:right;}
+#pagemenu li {display:inline; margin: 0 3px 0 0;}
+#pagemenu a {background: transparent; margin: 0; padding: 7px 10px; font:bold 11px Verdana; line-height:26px; letter-spacing:0;}
+#pagemenu a:hover { background: #E4F4B3 url(none);}
+
+/* Content Section */
+#content h2 {font:bold 1.4em Arial; margin-bottom:5px;}
+#content h2.pagetitle { font: bold 1.2em Arial;}
+#content h3 {font: bold 1.1em Arial;}
+#content a {text-decoration:none; border-bottom: 1px dashed #9AC025;}
+#content a:hover {border-bottom: 1px dashed #f60;}
+#content .entry {text-align:justify;}
+
+/* SideBar Section */
+#sidebar ul {list-style: none;	margin: 0;	padding: 0 0 10px;}
+#sidebar ul li {margin: 0;display: block;padding: 2px 0 6px;border-top: 1px solid #E8F3C5; font:bold 12px Arial; color:#676;}
+#sidebar li ul{list-style: none;margin: 0;padding: 6px 0 2px;}
+#sidebar li ul li{margin: 0;display: block;padding: 2px 0 4px 12px;border-top: 1px solid #E8F3C5;font:normal 11px Tahoma;}
+#sidebar a {text-decoration:none;}
+#sidebar p {font:11px Tahoma;}
+
+/* Footer Section */
+#footer p { padding: 20px 35px 0 35px;}
+
+/* Comment Stuffs */
+#comment {width:95%;}
+cite {font-weight:bold; font-style:normal;}
+.commentbody {color: #595949; font-size: 11px; margin: 0 0 5px 0;padding: 10px 15px 10px 15px;	
+     background: #f7f7f0;	border: 1px solid #f0f0e0; position: relative;}
+.commentbody p {line-height: 1.2em; margin:5px 0 0 0;}
+.commentlink {	font-size: 10px;}
+.commentlist {	list-style: none; margin:0; padding:0;}
+.commentcount {	position: absolute;	left: 460px;	top: 5px;	font: bold 24px Georgia,sans-serif;
+	color: #e0e0d0;	float: left;}
+
+/* Other Parts */
+img {padding:1px; border: 1px solid #666;}
+.navigation {	font-size: 11px;	padding: 0 0 15px 0; }
+.alignleft {float: left;text-align: left;}
+.alignright {float: right;margin-top: -1px;	text-align: right;}
+p.postmetadata {color: #999; padding: 5px 5px 5px 5px;text-align:right; margin: 0 0 0 30px;}
+small {color:#666}
+.wp-smiley {border:none}
+
+
+

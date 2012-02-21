@@ -1,0 +1,408 @@
+/* 
+
+Theme Name: Fluidityrs
+Theme URI: http://www.kaushalsheth.com/
+Description: Fluidity Theme with Right Sidebar
+Version: 1.0
+Author: Kaushal Sheth
+Author URI: http://www.kaushalsheth.com
+*/
+
+/* Credits*/
+/* A fluid template for business or fun */
+/* Original Design By Dave Reeder, www.davereederdesign.com */
+/* Hint of fMulti theme by http://www.fahlstad.se */
+
+
+body { margin: 0; padding: 0; background: #262626; }
+
+* {margin: 0; padding: 0; border: 0px none; font-family: "Trebuchet MS", Arial, sans-serif }
+
+
+/*------------Basic styles------------*/
+
+h1, h2, h3, span#copyright, span#design { margin: 0 10px; color: #fff; font-weight: normal; text-decoration: none; background: transparent }
+
+p {
+	margin: 0 0 1em;
+	padding: 0;
+	line-height: 1.4em;
+	font-size: 0.8em;
+	}
+
+/*p { font-size: 0.8em; line-height: 1.4em; text-align: justify }*/
+h1 { font-size: 1.3em; line-height: 1.4em; letter-spacing: 0.25em }	/* site heading */
+h2 { font-size: 1.0em; line-height: 1.4em; color: #FFA000 }	/* site heading */
+h3 { font-size: 0.8em; line-height: 1.4em; color: #FFA000  }				/* sub headings */
+span#copyright { font-size: 13px; line-height: 35px }  /* sets the copyright styles */
+span#design {  float: right; font-size: 13px; line-height: 35px }  /* floats the design link into position */
+span.validation {  float: right; margin-right: 10px; } /* floats the validation buttons */
+.validation img {  margin: 0; } /* floats the validation buttons */
+
+div { padding: 10px 0;}
+
+#hdrimg a {color: #06FF00; text-decoration: none; font-weight: normal;}
+#hdrimg a strong {color: #fff; text-decoration: none; font-weight: normal;}
+#hdrimg a:hover {color: #fff; text-decoration: none; font-weight: normal;}
+#hdrimg a:hover strong {color: #06FF00; text-decoration: none; font-weight: normal;}
+
+
+/*-------------Layout----------------*/
+
+#hdrimg {			/* Large image */
+	float: left; 			
+	width: 100%;
+	margin-bottom: 5px;
+	background: url('images/hdr.gif') repeat-x;
+	height: 170px;  	/* ie5x hack begins here */     
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	height: 150px;
+}
+html>body #hdrimg {
+	height: 150px;        /* ie5x hack ends here */
+}
+
+.rowcontainer {						/* Used to keep the divs in a row.  you can use this for any size of divs */
+	float: left;
+	margin-bottom: 5px;
+	width: 100%;
+	overflow: hidden;
+	background: #333;
+}
+
+#bttmbar { float: left; width: 100%; height: 35px; background: url('images/hdr.gif') bottom repeat-x }    /* Bottom copyright bar */
+
+
+/*------Columns: Note they dont add up to 100%, this is intentional to avoid problems!----------*/ 
+
+.fullcolumn { float: left; width: 99%;}		/* Full width column for a one column site */
+			
+.halfcolumn { float: left; width: 49%;}		/* Half width column for a two column site. */
+
+.onethirdcolumn { float: left; width: 33%; }		/* One third width column for a three column site */
+
+.quartercolumn { float: left; width: 24.5% }		/* One quarter width column for a four column site */
+
+.threequartercolumn { float: left; width: 74.5% }
+
+/*------------------------------Main Navigation------------------------------------------*/
+
+#nav { position: absolute; top: 145px; left: 0px; height: 25px; width: 100% }
+
+ul#nav  { margin: 0 }
+
+#nav li  /* Main nav list items */
+{
+	font-size: 13px;
+	float: left;
+	list-style: none;
+	text-align: center
+}
+
+#nav li a {   /* Main nav styles for all links */
+	display: block; /* Although display:block suggests a vertical list the float:left property under #nav li causes the menu to float inline */
+	margin-left: 5px; /* adds a gap between the tabs */
+	width: 90px; 	/* width of the tab */
+	line-height: 25px; /* height of the tab */
+	text-decoration: none;
+}
+	 
+#nav a:link, #nav a:visited  { background: url('images/tab.gif') no-repeat 0 -25px }
+
+#nav a:hover, #nav a:active { background: url('images/tab.gif') no-repeat 0 0 }
+
+#nav a#current { background: url('images/tab.gif') no-repeat 0 0 }
+
+
+/*-----------------------------------Other tags-----------------------------------------*/
+
+acronym { border-bottom: 1px dashed #999; cursor: help }
+
+blockquote { border-top: 2px solid #FFA000; border-bottom: 2px solid #FFA000; margin-left: 1.5em; padding-left: 5px; background-color: #333333}
+
+
+/* lists */
+ul { margin: 5px 0 5px 35px; list-style: url('images/bull.gif') }
+ol { margin: 5px 0 5px 35px; list-style: decimal }
+ol li, ul li { color: #fff; font-size: 0.8em; line-height: 1.4em }
+
+hr { margin: 10px 0px; height: 1px; background: #444; color: #444 }  /* rule styling */
+
+img {margin: 0 10px} /* all images styling */
+img.right {float: right}  /* right floating images */
+img.left {float: left}   /* left floating images */
+
+/*-------------------------------------------------------------------------------*/
+
+/* Modification done to basic theme */
+/* Added */
+
+#searchdiv {
+	margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+a, a:visited {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none; 
+}
+    
+ a:hover {
+    text-decoration: underline; 
+}
+
+/*font: bold 20px/1.1em "Trebuchet MS", "Verdana", sans-serif; }*/        
+h3.entrytitle {
+	padding: 0;
+	margin-bottom: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 1.1em;
+}
+	
+h3.entrytitle a, h3.entrytitle a:visited {
+	color: #FFA200;
+	text-decoration: none;
+}
+	
+h3.entrytitle  a:hover{
+	color: #FFA200;
+	text-decoration: underline;
+}
+    
+h3 a {
+    text-decoration: none;
+    border: 0px none;
+    color: #FFA200; 
+}
+div .entrybody h3, div .entrybody h2{
+margin-bottom:10px;
+color:#B37100;
+
+}
+    
+h3 a:hover {
+    text-decoration: none;
+    border: 0px none;
+    text-shadow: none;
+    color: #333;
+}
+
+
+.firstpost p.comments_link, .entrybody p.comments_link {
+	margin:0;
+}
+.firstpost {
+	background-color: #2E3233;
+	border: 1px solid #3e4243;
+	padding: 10px;
+	margin-bottom:15px;
+	background-image: url('images/latest.gif');
+	background-repeat: no-repeat;
+	background-position: right bottom
+}
+.entry{
+	background-color: #2E3233;
+	border: 1px solid #3e4243;
+	padding: 10px;
+	margin-bottom:15px;
+	color:#FFFFFF;
+}
+
+.arc {
+	border: 1px solid #3e4243;
+	background-color:#2E3233;
+	padding:10px;
+	color:#FFFFFF;
+	margin-bottom:15px;
+}
+.entrymeta {
+	font-size: 11px;
+	margin-bottom: 15px;
+	color:#FFFFFF;
+}
+
+.entry ul, .entry ol{
+margin-left:30px;
+list-style:disc;
+margin-top:10px;
+margin-bottom:10px;
+}
+.entry ul li, .entry ol li {
+	padding-top:5px;
+	line-height:1.5em;
+	}
+
+/* comments*/
+h2#comments{
+	padding:2px;
+	margin-bottom:10px;
+	margin-top:30px;
+	font-size: 110%;
+	color:#FF9900
+}
+#commentblock {
+	padding: 20px;
+	color:#999999;
+	clear: both;
+}
+
+ol#commentlist {
+	margin-top:0px;
+	padding: 5px;
+	margin-left: 20px;
+	color: #9b9b9b;
+	font-size:0.9em;
+}
+
+#commentlist li  p{
+	margin-bottom: 8px;
+	line-height: 20px;
+	padding:0;
+}
+
+.commentname {
+	margin: 0;
+	padding: 0  0 2px 0;
+	font-weight: bold;
+}
+
+.commentinfo{
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+.commenttext {
+	clear: both;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	border-top: 1px solid #000;
+	line-height:12px;
+	color: #999;
+	background-color: #2E3233;
+	padding: 5px;
+}
+
+.commenttext-admin {
+	clear: both;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	border-top: 1px solid #000;
+	line-height:12px;
+	color: #999;
+	background-color: #2E3233;
+	padding: 5px;
+}
+
+#commentsformheader{
+	padding-left:18px;
+	font-size: 1.4em;
+	color:#FF9900
+}
+
+#commentsform{
+	margin-top:0;
+	text-align:center;
+	padding:0px 10px;
+}
+
+#commentsform form{
+	text-align:left;
+	margin:0px;
+}
+
+#commentsform p{
+	margin:5px;
+}
+
+#commentsform form textarea{
+	width:99%;
+}
+p.comments_link  img{
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+/* Sidebar styling*/
+
+#sidebar {
+	float:right;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	background-color: #2E3233;
+	padding:15px;
+	color:#dddddd;
+	border: 1px solid #3e4243;
+}
+
+#sidebar h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #dddddd;
+	font-size: 110%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #555;
+	margin-bottom: 10px;
+}
+#sidebar p{
+	margin: 7px;
+	color:#999999;
+	line-height: 1.4em;
+	}
+#sidebar a, #sidebar a:visited {
+	color:#ffa200;
+	text-decoration:none;
+}
+#sidebar a:hover {
+	color:#ffa200;
+	text-decoration:underline;
+}
+	
+#sidebar ul li {
+	list-style-type: none;
+	margin-bottom: 15px;
+	margin-left: 10px
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin-top: 3px;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0.5em;
+	padding-top: 0.1em;
+	padding-right: 0;
+	padding-bottom: 0.1em;
+	padding-left: 0;
+	list-style-type: none;
+	list-style-position: outside;
+	list-style-image: url('images/bull.gif');
+}

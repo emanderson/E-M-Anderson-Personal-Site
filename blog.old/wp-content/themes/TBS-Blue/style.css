@@ -1,0 +1,250 @@
+/*  
+Theme Name: TBS - Blue Theme
+Theme URI: http://theblogstudio.com/
+Description: 
+Version: 1
+Author: The Blog Studio
+Author URI: http://theblogstudio.com/
+*/
+
+
+*
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* =Basic HTML Elements
+----------------------------------------------------------------------*/
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	background: #f2f2f2 url(images/body.gif) no-repeat top center;
+	border-top: 5px solid #69c;
+}
+
+/* =ID Elements
+----------------------------------------------------------------------*/
+
+#container
+{
+	background: #fff url(images/container.gif) repeat-y;
+	margin: 0 auto;
+	width: 700px;
+}
+
+#content
+{
+	float: right;
+	width: 500px;
+}
+
+#content a, #sidebar a
+{
+	border-bottom: 1px solid #9cf;
+	color: #69c;
+}
+
+#content a:hover, #sidebar a:hover
+{
+	color: #000;
+}
+
+#content blockquote
+{
+	padding: 0 20px;
+}
+
+#content blockquote p
+{
+	color: #999;
+	font: 13px Georgia, serif;
+	line-height: 150%;
+}
+
+#content h1
+{
+	background: url(images/h1.gif) no-repeat center right;
+	color: #369;
+	font: 17px "Trebuchet MS", sans-serif;
+	margin: 0 20px 5px;
+	line-height: 200%;
+	padding: 0 10px;
+	text-align: right;
+}
+
+#content h2
+{
+	background: url(images/h2.gif) no-repeat center left;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+	font: 15px Tahoma, sans-serif;
+	margin: 0 25px 15px;
+	padding: 0 15px;
+}
+
+#content li
+{
+	background: url(images/content_li.gif) no-repeat 5px 8px;
+	line-height: 150%;
+	list-style: none;
+	padding: 0 15px;
+}
+
+#content p, #content ol, #content ul
+{
+	color: #777;
+	font: 12px Verdana, sans-serif;
+	line-height: 150%;
+	margin: 0 40px 15px;
+}
+
+#footer
+{
+	background: url(images/footer.gif) no-repeat bottom left;
+	border-top: 1px solid #ddd;
+	clear: both;
+	color: #bbb;
+	height: 75px;
+	width: 700px;
+}
+
+#footer a
+{
+	color: #bbb;
+}
+
+#footer a:hover
+{
+	color: #666;
+}
+
+#footer p
+{
+	font: 10px/45px Verdana, sans-serif;
+	padding: 0 0 5px;
+	text-align: center;
+}
+
+#header
+{
+	background: url(images/header.gif) no-repeat top center;
+	clear: both;
+	height: 130px;
+	text-align: center;
+	width: 700px;
+}
+
+#header h1
+{
+	color: #69c;
+	font: 40px "Trebuchet MS", sans-serif;
+	padding: 20px 0 0;
+}
+
+#header h1 a:link, #header h1 a:visited, #header h1 a:hover {text-decoration: none; color: #69c;}
+
+#header p
+{
+	color: #666;
+	font: italic 14px "Trebuchet MS", sans-serif;
+}
+
+#nav
+{
+	background: #9cf;
+	border-top: 1px solid #fff;
+	font: 13px/30px Verdana, sans-serif;
+	width: 700px;
+}
+
+#nav li
+{
+	border-right: 1px solid #fff;
+	float: left;
+	text-align: center;
+	width: 100px;
+}
+
+#nav ul
+{
+	display: inline;
+	list-style: none;
+}
+
+#nav ul a
+{
+	color: #369;
+	display: block;
+	width: 100px;
+}
+
+#nav ul a:hover
+{
+	color: #fff;
+	background: #360;
+}
+
+#sidebar
+{
+	float: left;
+	width: 200px;
+}
+
+#sidebar form
+{
+	background: url(images/search_field.gif) no-repeat top center;
+	height: 30px;
+	margin: 0 0 10px;
+	width: 200px;
+}
+
+#sidebar form input
+{
+	background: none;
+	color: #999;
+	font: 9px Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 150px;
+}
+
+#sidebar form p
+{
+	padding: 4px 0 0 5px;
+}
+
+#sidebar h3
+{
+	border-bottom: 1px solid #ddd;
+	color: #999;
+	font: 14px "Trebuchet MS", sans-serif;
+	margin: 0 10px 10px;
+	text-align: right;
+}
+
+#sidebar li
+{
+	background: url(images/side_li.gif) no-repeat 5px 6px;
+	line-height: 150%;
+	list-style: none;
+	padding: 0 15px;
+}
+
+#sidebar p, #sidebar ol, #sidebar ul
+{
+	font: 10px Verdana, sans-serif;
+	color: #999;
+	line-height: 150%;
+	margin: 0 20px 10px;
+}
+
+#content img {float:left; padding: 5px; margin: 5px; border: 1px solid #6299CC; background: #95CCFF}
+
+#content img:hover {background: none;}

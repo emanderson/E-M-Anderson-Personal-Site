@@ -1,0 +1,72 @@
+#popout ul li {
+padding-left: 1em;
+}
+
+#popout h2 {
+font-size: 1.6em;
+}
+
+#popout ul ul li:before {
+content: "\00BB \0020";
+}
+
+/* style, color and size links and headings to suit */
+#popout a, #popout ul h2 {
+display: inline;
+border: none;
+margin: 0;
+padding: 0;
+}
+
+#popout ul h2 {
+color: #000;
+font-size: 1.6em;
+background: none;
+text-transform: none;
+background-image: none
+}
+
+#popout a {
+color: #fff;
+font-size: 1em;
+background: none;
+text-decoration: none;
+}
+
+#popout ul {
+cursor: default;
+}
+
+
+#popout a:hover {
+color: #fff;
+background: none;
+
+}
+
+#popout li {
+/* make the list elements a containing block for the nested lists */
+position: static;
+} 
+
+#popout ul ul {
+position: static;
+width: 100%; /* width is based on the containing block */
+}
+
+div#popout ul ul,
+div#popout ul li:hover ul ul
+{display: inline;}
+
+div#popout ul li:hover ul,
+div#popout ul ul li:hover ul
+{display: inline;}
+
+
+a#nopoplink {
+	display: none;
+	}
+
+a#poplink {
+	display: inline;
+	}

@@ -1,0 +1,107 @@
+/*   
+Theme Name: Rusty Grunge
+Theme URI: http://www.chris-wallace.com/2008/11/07/rusty-grunge-wordpress-theme/
+Description: A dirty, grungy theme with a fully dynamic sidebar by <a href="http://www.chris-wallace.com">Chris Wallace</a>.
+Author: Christopher Wallace
+Author URI: http://www.chris-wallace.com
+Version: 1.2
+Tags: two-columns, fixed-width
+
+	Rusty Grunge by Chris Wallace
+	http://www.chris-wallace.com/2008/11/07/rusty-grunge-wordpress-theme/
+	
+	The CSS, XHTML, design and PHP are released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+	
+*/
+
+/* general styles */
+body{margin: 0; padding: 0 0 100px 0; font: 12px Arial, Helvetica, sans-serif;  background: #322F28 url(images/bg-body.jpg); text-align: center}
+a, a:visited{color: #4f998d; text-decoration: none} 
+a:hover, a:active{text-decoration: underline}
+a img{border:0}
+h1{font:25px normal Georgia, "Times New Roman", Times, serif}
+h2{font:1.4em Georgia, "Times New Roman", Times, serif}
+h3{font-size:1em;margin-bottom: 0;}
+caption{border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; background-color: #f2f2f2}
+code{background: #D2ECE8}
+pre code{color: black; background: none;}
+pre{ height: auto; padding: 40px 12px 12px 12px; background: #FAF8EB url(images/bg-pre.jpg) no-repeat top left; overflow-x:scroll;}
+fieldset{margin: 0; padding: 0; border: 0}
+label{display:block; margin: 10px 0 5px 0;}
+
+/* WordPress-specific styles */
+.navigation{margin: 20px 0; height: 27px;}
+.alignleft{float:left}
+.alignright{float:right}
+.aligncenter{text-align: center; float:none}
+.tags a{background:url(images/ico-tags.gif) no-repeat top left; padding-left: 18px;}
+
+/* header styles */
+#header{ width:879px; height:88px;  margin: 0 0 30px 0; padding: 10px 0 0 0; background:url(images/header.png) no-repeat top left; text-align:center; }
+#header h1{ margin: 0 40px 0 40px; padding: 8px 0; background-color:#aa1f10; opacity: 0.8; filter:alpha(opacity=80)}
+#header h1 a{color: white}
+#header a{ display: block;}
+#header-page{background: url(images/white-page-header.png) no-repeat top right; margin: 0; width: 693px; height:59;text-align:right}
+#header-page img{margin: 20px 30px 0 0}
+
+/* main styles */
+#container {margin:0 auto;text-align:left;width:876px}
+#main{background: url(images/bg-content.png) repeat-y top left; position: relative; margin: 0; padding: 20px 0 0 0; width: 876px}
+
+/* content styles */
+#content{ display: inline; float: left; width: 640px; margin-left: 30px; }
+#content div.inner{ padding: 4px 40px 20px 40px }
+#content .postfooter{background:url(images/bg-post-footer.png) no-repeat top left; width: 561px; height: 30px; line-height: 30px; margin-bottom: 35px; text-indent: 10px}
+#content .calendar{background:url(images/ico-calendar.png) no-repeat top left; width: 39px; height: 41px; float: left; margin: 0 20px 0 0; text-align: center}
+#content .calendar small{font: 10px Arial, Helvetica, sans-serif; color: #fff; line-height: 1.5em; text-transform:uppercase;display: block}
+#content .calendar strong{font: bold 22px Arial, Helvetica, sans-serif; color: #2e7368; line-height: 0.9em;display: block}
+#content h1{margin-top:0}
+#content h1.post{margin-bottom: 0;}
+#content .posted{margin-bottom: 10px;}
+
+/* sidebar styles */
+#sidebar{ float: right; width: 198px; background: url(images/bg-sidebar.png) repeat-y top right; color: white;}
+#sidebar div{margin: 10px 10px 20px 10px}
+#sidebar h2{ margin: 0 0 10px 0; padding: 0; color: white; line-height: 1.8em; text-indent: 10px; background: url(images/sidebar-h2.png) no-repeat top left; width: 171px; height: 32px;}
+#sidebar ul, #sidebar ul li{ margin: 0 0 0 5px; padding: 0; list-style:none;}
+#sidebar ul{ margin: 0 0 20px 5px; }
+#sidebar a{ color: #bcf3ea;}
+
+/* comment styles */
+#comments ol, #comments ol li{margin: 0; padding: 0; list-style-type: lower-roman; color: #C8E6E4; font-family: 'Comic Sans MS',Textile,cursive}
+#comments ol *{color: black; font-family: Arial, Verdana, Tahoma, sans-serif}
+#comments ol li{padding: 20px 30px; margin: 0; background:#fff url(images/bg-comment.jpg)}
+#comments ol li div.comment-author{font:18px Georgia, "Times New Roman", Times, serif; overflow: visible; vertical-align: middle}
+#comments ol li.alt{background:#fff url(images/bg-comment-alt.jpg)}
+#comments ol li.author{background:#fff url(images/bg-comment-author.jpg)}
+#comments ol li.author a{color: black}
+#comments ol li input,
+#comments ol li select,
+#comments ol li textarea{width: 100%}
+#comments ol li .comment-meta{color: #ccc; font-style: italic; font-size: .8em; margin-bottom: 20px}
+#comments ol li .comment-meta a{color: #ccc; text-decoration none; border-bottom: 1px dotted #ccc;}
+#comments ol li .comment-meta a:hover{color: black; text-decoration none; border-bottom: none;}
+#comments div.comment-body{clear:both; margin: 0 0 0 64px}
+.comments a{background:url(images/ico-speech.gif) no-repeat top left; padding-left: 18px;}
+#comments div.reply a{background: url("images/reply_arrow.png") no-repeat top left; padding-left: 15px; color: #C12110; font-size: .8em}
+#comments ol li ul.children,
+#comments ol li ul.children li{list-style: none; margin-top: 10px; margin-left: 0}
+
+/* footer styles */
+#footer{margin: 0; padding: 0 0 0 20px; list-style: none; color: white}
+#footer li{margin: 0; padding: 10px 0; font:11px Arial, Helvetica, sans-serif;}
+#footer li.left,#footer li.right{width:50%;}
+#footer li.left{float:left}
+#footer li.right{float:right}
+#footer a{color:white; border-bottom: 1px dotted #FDE37B}
+#footer a:hover{color:#FFFF66; border-bottom: 1px solid white; text-decoration: none}
+
+/* clear styles */
+.clearleft{clear: left}
+.clearright{clear: right}
+.clearboth{clear: both}
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0}
+.clearfix {display: inline-block}
+html[xmlns] .clearfix {display: block}
+* html .clearfix {height: 1%}

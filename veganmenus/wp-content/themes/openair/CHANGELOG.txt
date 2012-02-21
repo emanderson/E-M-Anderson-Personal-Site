@@ -1,0 +1,13 @@
+CHANGELOG
+
+1.1.4	- changed header file to include wp_enqueue_script()
+		- changed comment file for new 2.7 commenting
+		- added legacy comment file
+		- fixed ol styling
+		- removed spacer divs and replaced with br in post div
+		
+1.1.6   - fixed issues with functions.php
+        - changed the post date (in the cloud) so it links to the month and
+		  year archives
+		  
+1.1.7   - fixed problems with legacy comments and < WP2.7

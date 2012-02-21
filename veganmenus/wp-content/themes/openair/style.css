@@ -1,0 +1,654 @@
+/*  
+ * Theme Name: 		OpenAir
+ * Theme URI: 		http://www.theenglishguy.co.uk/openair-theme/
+ * Description: 	An easy-to-use and tweak heme based on the blue sky background image. Two columns, widget-ready, gravatar-ready, and SEO friendly, brought to you by <a href="http://www.theenglishguy.co.uk/">The English Guy</a>.
+ * Author: 			Richard Dows
+ * Author URI: 		http://www.theenglishguy.co.uk/
+ * Tags:			two-columns, blue, white, fixed-width, right-sidebar, threaded-comments
+ * Version:			1.1.7
+ */
+
+* {
+    margin:					0;
+	padding:                0;
+}
+
+body, html {
+	background-image:		url(images/bg.jpg);
+	background-attachment:	fixed;
+	background-repeat:		no-repeat;
+	background-position:	bottom center;
+	background-color:		transparent;
+	font-size:				100%;
+	font-family:			Myriad, "Myriad Pro", Palatino, "Rotis Sans Serif", serif;
+}
+
+
+
+/*----------------------------- wrapper ------*/
+#wrap {
+    width:					825px;
+	margin:					0 auto;
+}
+
+
+
+/*-------------------------- main divs -------*/
+.content {
+    width:					600px;
+	float:					left;
+}
+
+#header { 
+    min-height:             75px;
+	height:					auto !important;
+	height:					75px;
+}
+#header #text {
+	font-family:			Myriad, "Myriad Pro", Palatino, "Rotis Sans Serif", serif;
+	font-style:				italic;
+	margin:					10px 0 0 10px;
+}
+#header #text h2 {
+    font-size:				16px;
+	font-style:				italic;
+	color:					#333;
+}
+
+#middle { 
+	margin:					0 5px 5px 5px;
+}
+
+#sidebar {
+    width:					175px;
+	margin:					0 0 0 15px;
+	float:					left;
+}
+#sidebar .top, #sidebar .middle, #sidebar .bottom {
+    margin:					0;
+	padding:                0;
+}
+#sidebar .top, #sidebar .bottom {
+    background-repeat:		no-repeat;
+}
+#sidebar .top { 
+    background-image:		url(images/sidebar_top.png);
+	height:					5px;
+}
+* html #sidebar .top {
+    margin:					0 0 -15px 0;
+}
+#sidebar .middle { 
+    background-image:		url(images/sidebar_middle.png);
+	background-repeat:		repeat-y;
+}
+#sidebar .bottom { 
+    background-image:		url(images/sidebar_bottom.png);
+	height:					4px;
+	margin:					0 0 15px 0;
+}
+#sidebar .title {
+    background-color:		#fff;
+	border-top:				1px solid #333;
+	border-bottom:			1px solid #333;
+	width:					173px;
+	margin:					0 0 0 1px;
+}
+#sidebar .title h3 {
+    color: 					#08281b;
+	padding:                3px 0 3px 5px;
+	font-size:				16px;
+}
+#sidebar ul {
+	margin:					0 5px 0 20px;
+	padding:                3px 0 5px 0;
+}
+#sidebar ul.work {
+    margin-left:			20px;
+	list-style-type:		disc;
+}
+#sidebar ul ul {
+    list-style-type:		disc;
+	margin:					0 5px 15px 20px;
+}
+
+#sidebar #searchform input#s {
+    width:					153px;
+	margin:					5px 10px;
+	padding:                2px 1px;
+}
+
+#sidebar p#tagcloud {
+    margin:					0 3px;
+	text-align:				center;
+}
+
+
+
+/*----------------------------- post ---------*/
+.post { }
+.post-top, .post-bottom {
+    background-repeat:		no-repeat;
+	background-color:		transparent;
+}
+.post-top {
+    background-image:		url(images/tablet_top.png);
+	height:					10px;
+	max-height:				10px;
+}
+* html .post-top {
+    background-image:		url(images/tablet_top.gif);
+	margin:					0 0 -9px 0;
+}
+.post-content {
+    background-image:		url(images/tablet_middle.png);
+	background-repeat:		repeat-y;
+	font-size:				100%;
+}
+* html .post-content {
+    background-image:		url(images/tablet_middle.gif);
+}
+.post-bottom {
+    background-image:		url(images/tablet_bottom.png);
+	height:					10px;
+	position:				relative;
+}
+* html .post-bottom {
+    background-image:		url(images/tablet_bottom.gif);
+}
+.post-content ul, .post-content dl, .post-content ol {
+    padding:				5px 0 5px 25px;
+}
+.post-title {
+    background-color:		#fff;
+	border-top:				1px solid #333;
+	border-bottom:			1px solid #333;
+	margin:					0 2px;
+	padding:                0 3px;
+	position:				relative;
+}
+.post-date {
+    background-color:		transparent;
+	background-image:		url(images/cloud.png);
+	background-repeat:		no-repeat;
+	width:					108px;
+	height:					75px;
+	position:				absolute;
+	top:					-20px;
+	left:					500px;
+	text-align:				center !important;
+}
+* html .post-date {
+    background-image:		url(images/cloud.gif);
+}
+.post-date .month, .post-date .date {
+	font-size:				12px;
+	font-weight:			bold;
+	color:					#000;
+}
+.post-date p {
+	margin:					12px 0 0 0;
+}
+.post-date .month { 
+	text-align:				center;
+	font-size:				16px;
+	padding:				0 0 5px 0;
+}
+.post-date .date { 
+	text-align:				center;
+	padding:                3px 0 0 0;
+}
+.post-main {
+	padding:                10px 5px 0 5px;
+}
+.post-title h2, #commentsdiv h4 {
+	font-size:				24px;
+}
+
+.post-comments {
+    background-image:		url(images/sun.png);
+	background-repeat:		no-repeat;
+	width:					51px;
+	height:					49px;
+	position:				absolute;
+	top:					-42px;
+	left:					2px;
+}
+* html .post-comments {
+    background-image:		url(images/sun.gif);
+}
+.post-comments p {
+    margin:                 23px 0 0 8px;
+}
+
+.post-info {
+    position:				absolute;
+	left:					55px;
+	top:					-17px;
+}
+.post-archive .post-info {
+    text-align:				left;
+}
+
+
+
+/*-------------------------- comments --------*/
+#commentsdiv {
+	margin:					0;
+}
+.commentlist {
+    margin:					10px 0 0 0;
+}
+.commentlist li.comment {
+    display: 				block;
+	padding:                5px 10px;
+	margin:					5px 1px 1px 1px;
+	border:					1px solid #000;
+	background-image:		url(images/bg.png);
+	background-position:	top left;
+	background-repeat:		repeat;
+}
+.commentlist li.comment:after {
+    content: 				".";
+    display: 				block;
+    clear: 					both;
+    visibility: 			hidden;
+    line-height: 			0;
+    height: 				0;
+}
+html[xmlns] .commentlist li.comment {
+    display:				block;
+}
+* html .commentlist li.comment {
+    height: 				1%;
+	background-image:		url(images/bg.gif);
+}
+
+.commentlist ul, .commentlist ol, .commentlist dl {
+	padding:                0;
+	margin:                 0 0 10px 20px;
+}
+.commentlist ul { 
+    list-style-image:		disc;
+}
+.commentlist ol {
+    list-style-type:		decimal;
+}
+
+.commentlist .children {
+    margin:					20px 0 0 0;
+	list-style:				none;
+}
+
+.comments-top, .comments-bottom {
+    background-repeat:		no-repeat;
+	background-color:		transparent;
+}
+.comments-top {
+    background-image:		url(images/tablet_top.png);
+	height:					10px;
+	max-height:				10px;
+}
+* html .comments-top {
+    background-image:		url(images/tablet_top.gif);
+	margin:					0 0 -9px 0;
+}
+.comments-middle {
+    background-image:		url(images/tablet_middle.png);
+	background-repeat:		repeat-y;
+	font-size:				100%;
+}
+* html .comments-middle {
+    background-image:		url(images/tablet_middle.gif);
+}
+.comments-bottom {
+    background-image:		url(images/tablet_bottom.png);
+	height:					10px;
+	position:				relative;
+}
+* html .comments-bottom {
+    background-image:		url(images/tablet_bottom.gif);
+}
+
+.comments {
+    position:				relative;
+}
+.comments-textarea { 
+    margin:					0 10px 0 8px;
+}
+.comments-textarea textarea {
+    width:					100%;
+	margin:					10px 0 0 0;
+}
+.comments-title {
+    background-color:		#fff;
+	border:					1px solid #333;
+	margin:					0 1px 0 1px;
+}
+.comments-title h3 {
+    font-size:				18px !important;
+	padding:                2px 0 2px 2px;
+}
+.comments-title h4 {
+    font-size:				16px !important;
+	padding:                2px 0 2px 2px;
+}
+.comment-author {
+    float:					right;
+	clear:					right;
+	width:					75px;
+	margin:					0 5px 0 0;
+	padding:                10px 0 10px 5px;
+	border-left:			1px solid #333;
+	font-size:				14px;
+	text-align:				center;
+	min-height:             60px;
+	height:					auto !important;
+	height:					60px;
+}
+* html .comment-author {
+    width:					115px;
+}
+.comment-author img {
+    margin:					0 auto;
+	padding:                5px;
+	clear:					both;
+	border:					1px solid #ddd;
+}
+.comment-author cite {
+    font-size:				13px;
+}
+
+.comments-content {
+    padding:                5px 10px;
+}
+.comments-inputs {
+    margin:					0 0 10px 10px;
+}
+.comments-inputs label {
+    float:					left;
+    width:					100px;
+}
+.comments-inputs input {
+    margin:					0 0 3px 0;
+}
+.comments-middle .buttons {
+    text-align:				right;
+}
+.comments-middle .buttons input {
+    margin:					0 10px 0 0;
+	border:					1px solid #333;
+	font-family:			Myriad, "Myriad Pro", Palatino, "Rotis Sans Serif", serif;
+	font-size:				16px;
+	font-weight:			bold;
+}
+.comments-middle .buttons input:hover {
+    color:					#548cbd;
+}
+.comments .inputs {
+    padding:                0 10px;
+}
+
+.comments p {
+    padding:                0 0 10px 0;
+}
+
+
+
+/*---------------------------- footer --------*/
+#footer { 
+	background-color:		transparent;
+	color:					#000;
+	width:					800px;
+}
+
+#footer .top, #footer .bottom {
+    background-repeat:		no-repeat;
+	height:					5px;
+	max-height:             5px;
+}
+#footer .top {
+    background-image:		url(images/footer_top.png);
+}
+* html #footer .top {
+	margin:					0 0 -15px 0;
+}
+#footer .middle {
+    background-image:		url(images/footer_middle.png);
+}
+#footer .bottom {
+    background-image:		url(images/footer_bottom.png);
+}
+#footer .block {
+	float:					left;
+	width:					250px;
+	margin:					0 0 0 15px;
+}
+* html #footer .block {
+	width:					240px;
+}
+
+#footer h3 {
+    color: 					#08281b;
+	padding:                3px 0 3px 5px;
+	font-size:				16px;
+}
+#footer ul {
+    list-style-type:		disc;
+	margin:					0 0 0 25px;
+}
+
+
+
+
+/*-------------------------- calendar --------*/
+/* wp-calendar refers to the table itself     */
+#wp-calendar {
+    margin:					0 auto;
+	width:					95%;
+}
+#wp-calendar caption {
+    display:				none;
+}
+#wp-calendar thead tr { }
+#wp-calendar thead tr th {
+    text-align:				left;
+} 
+#wp-calendar tbody tr { }
+#wp-calendar tfoot tr { }
+#wp-calendar tbody td { 
+    min-height:             35px;
+	height:					35px;
+	background-color:		#fff;
+	border-right:			1px solid #ccc;
+	border-bottom:			1px solid #ccc;
+	margin:					0 5px 5px 0;
+	padding:                2px;
+	vertical-align:			top;
+}
+#wp-calendar tbody td:hover {
+    background-color:		#8aacd2;
+}
+#wp-calendar tbody td#today {
+    background-color:		#d8dfef;
+}
+#wp-calendar tbody td#today:hover {
+    background-color:		#ddd;
+}
+
+#wp-calendar tbody a {
+    color:					#3e483d;
+	font-weight:			bold;
+}
+#wp-calendar tbody a:hover {
+    color:					#000;
+}
+#wp-calendar tfoot a {
+    color:					#000;
+	font-size:				18px;
+	text-decoration:		none;
+}
+#wp-calendar tfoot a:hover {
+    color:					#399;
+}
+
+
+/*----------------------------- links --------*/
+a {
+    color:					#08281b;
+}
+a:visited {
+    color:					#3e483d;
+}
+a:hover {
+    color:					#548cbd;
+}
+h1 a, h1 a:visited {
+    color:					#fff;
+	text-decoration:		none;
+}
+h1 a:hover { 
+    color:					#eee;
+}
+h2 a {
+    color:					#000;
+	text-decoration:		none;
+}
+h2 a:visited {
+    color:					#111;
+}
+h2 a:hover {
+    color:					#c00;
+}
+
+.post-content a, .post-info a, #sidebar a, #footer a {
+    border:					0;
+	color:					#08281b;
+}
+.post-content a:visited, .post-info a:visited, #sidebar a:visited, #footer a:visited {
+    color:					#3e483d;
+}
+.post-content a:hover, .post-info a:hover, #sidebar a:hover, #footer a:hover {
+    color:					#548cbd;
+}
+
+
+
+/*----------------------------- misc ---------*/
+.spacer {
+    clear:					both;
+}
+.justify {
+    text-align:				justify;
+}
+.centered {
+    text-align:				center;
+}
+.navigation {
+    text-align:				center;
+}
+.small {
+    font-size:				87%;
+}
+.uppercase {
+    text-transform:			uppercase;
+}
+.align-left {
+    margin:					0 0 0 10px;
+	float:					left;
+}
+.align-right {
+    margin:					0 10px 0 0;
+	float:					right;
+}
+img {
+    border:					0;
+}
+.post p {
+    padding:                5px 0;
+}
+blockquote {
+    background-color:		#6cf;
+	border:					1px solid #222;
+	margin:					5px 25px;
+	padding:                2px 5px 5px 5px;
+}
+.comments blockquote {
+    margin:					5px 25px 0 25px;
+}
+blockquote ul, blockquote ol, blockquote dl {
+    margin:					0 0 0 15px;
+}
+
+h2 {
+    font-size:				12px;
+}
+
+
+.clearfix:after {
+    content: 				".";
+    display: 				block;
+    clear: 					both;
+    visibility: 			hidden;
+    line-height: 			0;
+    height: 				0;
+}
+
+.clearfix {
+    display: 				inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: 				block;
+}
+
+* html .clearfix {
+    height: 				1%;
+}
+
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+img.alignright {
+    float: right !important; 
+	margin:0 0 0 5px !important;
+}
+
+.wp-caption {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3;
+   padding-top: 4px;
+   margin: 10px;
+   /* optional rounded corners for browsers that support it */
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.wp-caption img {
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+   font-size: 11px;
+   line-height: 17px;
+   padding: 0 4px 5px;
+   margin: 0;
+}
+

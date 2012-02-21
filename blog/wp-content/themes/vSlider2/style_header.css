@@ -1,0 +1,63 @@
+/*
+	vSlider v2.0
+	http://iRui.ac
+
+	The CSS, XHTML and design is licensed under a Creative Commons License
+	http://creativecommons.org/licenses/by/2.5/
+*/
+
+
+/**************/
+/* Header box */
+
+#headerimg {
+	height: 200px;
+	width: 762px;
+	margin: 15px auto 0 auto;
+}
+
+#topbar {
+	margin: 0px auto 10px auto;
+	height: 36px;
+	text-align: right;
+	width:  762px;
+}
+
+
+#topbar .nav {
+	float: right;
+	margin-top: 10px;
+}
+
+#topbar .nav ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none; 
+}
+
+#topbar .nav ul li {
+	display: inline;
+	padding: 0 10px 0 12px;
+	margin: 0;
+	border-left: 1px solid #acb0b5;
+}
+
+#topbar .nav li#homepage {
+	border-left: 0px;
+}
+
+/* End of Header box */
+/*********************/
+
+
+
+/*********************/
+/* Header Typography */
+
+#topbar .nav {
+	font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* End of Header Typography */
+/****************************/

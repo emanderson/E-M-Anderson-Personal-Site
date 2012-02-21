@@ -1,0 +1,7 @@
+.screen {
+  display: block;
+}
+
+.mobile {
+    display: none;
+}

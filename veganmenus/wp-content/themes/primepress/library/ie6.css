@@ -1,0 +1,12 @@
+#container {
+	width /**/:962px;
+}
+
+#primary {
+	overflow: hidden;
+}
+
+.entry-content img { width: expression(this.width > 540 ? 540: true); }
+.content-480px .entry-content img { width: expression(this.width > 480 ? 480: true); }
+.content-580px .entry-content img { width: expression(this.width > 580 ? 580: true); }
+.content-620px .entry-content img { width: expression(this.width > 620 ? 620: true); }

@@ -1,0 +1,19 @@
+@import url("./style.css");
+
+/*
+Theme Name: Sirius Merkur
+Theme URI: http://blogshop.de
+Description: It must be serius.
+Version: 1.0
+Author: Olaf A. Schmitz
+Author URI: http://blogshop.de
+*/
+
+#header {background: url("./images/venus/logo.jpg") no-repeat top left;}
+#menu ul.comment li {color:#A038CB;}
+#menu h2 {color:#A038CB;}
+h3 {color:#A038CB;}
+.storytitle {color:#A038CB;}
+a {color:#A038CB;}
+#wp-calendar a:link, #wp-calendar a:visited {color: #A038CB;}
+#wp-calendar #today {color:#A038CB;}

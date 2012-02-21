@@ -1,0 +1,19 @@
+body {
+  background: black;
+}
+
+#imageArea {
+  width: 800px;
+  min-height: 540px;
+}
+
+#imageArea img {
+  width: 800px;
+}
+
+#pauseButton {
+  background: white;
+  color: red;
+  width: 150px;
+  text-align: center;
+}
