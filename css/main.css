@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Handlee", sans-serif;
+    font-size: 250%;
+    padding: 10px;
+    text-align: left;
+}
+
+p {
+    padding: 10px;
+}
